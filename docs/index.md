@@ -1,17 +1,16 @@
-# Welcome to MkDocs
+# HawcxFramework Documentation
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
-## Commands
+<!-- need to update the opening statements and lingo -->
+Welcome to the HawcxFramework documentation. Use the sidebar to navigate through the different sections, or use the links below:
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+1. [Introduction](introduction.md)
+2. [How Hawcx Works](how-hawcx-works.md)
+3. [Sample Application](sample-application.md)
+4. [Get Started](get-started.md)
+5. [First Steps](first-steps.md)
+6. [Integration in Java Application](java-integration.md)
+7. [Integration in React Application](react-integration.md)
+8. [Integration in Flutter Application](flutter-integration.md)
+9. [Next Steps](next-steps.md)
+10. [Feature Requests](feature-requests.md)

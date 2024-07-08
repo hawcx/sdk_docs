@@ -1,9 +1,9 @@
 site_name: Hawcx
 site_url: https://james-willett.github.io/mkdocs-material-youtube-tutorial/
+
 theme:
   name: material
   features:
-    - navigation.tabs
     - navigation.sections
     - toc.integrate
     - navigation.top
@@ -27,6 +27,21 @@ theme:
       primary: teal
       accent: lime
 
+nav:
+  - Home: index.md
+  - Introduction: introduction.md
+  - How Hawcx Works: how-hawcx-works.md
+  - Sample Application: sample-application.md
+  - Android Integration:
+    - Get Started: get-started.md
+    - First Steps: first-steps.md
+    - Java Application: java-integration.md
+    - React Native Application: react-integration.md
+    - Flutter Application: flutter-integration.md
+  - Next Steps: next-steps.md
+  - Feature Requests: feature-requests.md
+  - Feedback: feedback.md
+
 plugins:
   - search
 
@@ -44,6 +59,5 @@ markdown_extensions:
   - pymdownx.mark
   - attr_list
 
-
 copyright: |
-  &copy; 2024 <a href="https://github.com/hawcx"  target="_blank" rel="noopener">Soudarya</a>
+  &copy; 2024 <a href="https://github.com/hawcx" target="_blank" rel="noopener">Soudarya</a>
