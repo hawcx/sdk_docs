@@ -41,6 +41,7 @@ nav:
   - Next Steps: next-steps.md
   - Feature Requests: feature-requests.md
   - Feedback: feedback.md
+  - Troubleshoot: troubleshoot.md
 
 plugins:
   - search
