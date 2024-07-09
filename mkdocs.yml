@@ -1,6 +1,5 @@
 site_name: Hawcx
 site_url: https://james-willett.github.io/mkdocs-material-youtube-tutorial/
-
 theme:
   name: material
   features:
@@ -27,21 +26,27 @@ theme:
       primary: teal
       accent: lime
 
+extra_css:
+  - docs/css/custom.css  # Add this line to include your custom CSS
+
 nav:
   - Home: index.md
   - Introduction: introduction.md
   - How Hawcx Works: how-hawcx-works.md
   - Sample Application: sample-application.md
+  - "----------------------------------------": "_separator.md"  
   - Android Integration:
     - Get Started: get-started.md
     - First Steps: first-steps.md
     - Java Application: java-integration.md
     - React Native Application: react-integration.md
     - Flutter Application: flutter-integration.md
-  - Next Steps: next-steps.md
-  - Feature Requests: feature-requests.md
-  - Feedback: feedback.md
-  - Troubleshoot: troubleshoot.md
+  - "----------------------------------------": "_separator.md" 
+  - Next Steps:
+    - FAQs: faq.md
+    - Feature Requests: feature-requests.md
+    - Feedback: feedback.md
+    - Troubleshoot: troubleshoot.md
 
 plugins:
   - search
@@ -49,6 +54,7 @@ plugins:
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
+      pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - admonition
