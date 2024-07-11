@@ -47,4 +47,4 @@ If you're starting a new project and want to build it with HawcxFramework from t
 5. Customize the application name, icon, and other resources as needed for your project.
 6. Start building your application using HawcxFramework's features!
 
-For a detailed guide on the key features of HawcxFramework and how to implement them in your new application, please proceed to the First Steps section.
+For a detailed guide on the key features of HawcxFramework and how to implement them in your new application, please proceed to the next section.

@@ -37,7 +37,7 @@ nav:
   - "----------------------------------------": "_separator.md"  
   - Android Integration:
     - Get Started: get-started.md
-    - First Steps: first-steps.md
+    # - First Steps: first-steps.md
     - Java Application: java-integration.md
     - React Native Application: react-integration.md
     - Flutter Application: flutter-integration.md
