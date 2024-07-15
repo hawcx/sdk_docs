@@ -1,16 +1,26 @@
-# HawcxFramework Documentation
+# Welcome to HawcxFramework Documentation
 
+Secure your mobile applications with HawcxFramework - the cutting-edge security solution for Android developers.
 
-<!-- need to update the opening statements and lingo -->
-Welcome to the HawcxFramework documentation. Use the sidebar to navigate through the different sections, or use the links below:
+## Quick Navigation
 
-1. [Introduction](introduction.md)
-2. [How Hawcx Works](how-hawcx-works.md)
-3. [Sample Application](sample-application.md)
-4. [Get Started](get-started.md)
-5. [First Steps](first-steps.md)
-6. [Integration in Java Application](java-integration.md)
-7. [Integration in React Application](react-integration.md)
-8. [Integration in Flutter Application](flutter-integration.md)
-9. [Next Steps](next-steps.md)
-10. [Feature Requests](feature-requests.md)
+- [Introduction](introduction.md): Learn about HawcxFramework and its benefits.
+- [Demo Application](demo-application.md): Experience HawcxFramework in action.
+- [Get Started](get-started.md): Set up HawcxFramework in your project.
+
+## Android Integration
+
+- [Get Started with Android](android/get-started.md)
+- [Integrate in Java Application](android/java-integration.md)
+- [Integrate in React Native Application](android/react-native-integration.md)
+- [Integrate in Flutter Application](android/flutter-integration.md)
+- [Next Steps](android/next-steps.md)
+
+## Support
+
+- [FAQs](faqs.md): Find answers to common questions.
+- [Feature Requests](feature-requests.md): Suggest new features.
+- [Feedback / Complaints](feedback.md): Share your thoughts or concerns.
+- [Troubleshoot](troubleshoot.md): Solve common integration issues.
+
+Get started with HawcxFramework today and take your app's security to the next level!

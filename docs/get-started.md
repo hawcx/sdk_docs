@@ -1,50 +1,68 @@
-# Get Started
+# Get Started with HawcxFramework
 
-Welcome to HawcxFramework! This guide will help you integrate our security solution into your Android application. Whether you're adding HawcxFramework to an existing project or starting a new one, we've got you covered.
+Ready to enhance your app's security with HawcxFramework? Choose the integration method that best suits your project:
 
-## 1. Integrate in Existing Application
+<div class="grid-container">
+  <div class="grid-item" onclick="location.href='/android/existing-project'">
+    <i class="fa fa-plus-square"></i>
+    <h3>Integrate in Existing Project</h3>
+    <p>Add HawcxFramework to your current Android app</p>
+  </div>
 
-If you have an existing Android application and want to enhance its security with HawcxFramework, follow these steps:
+  <div class="grid-item" onclick="location.href='/android/new-project'">
+    <i class="fa fa-file-code"></i>
+    <h3>Integrate in New Project</h3>
+    <p>Start a new Android project with HawcxFramework</p>
+  </div>
 
-1. Download the HawcxFramework AAR file:
-   [Download HawcxFramework AAR](https://github.com/hawcx/android_sdk/releases/download/v0.0.1/hawcx.aar)
+  <div class="grid-item" onclick="location.href='/android/template-project'">
+    <i class="fa fa-clone"></i>
+    <h3>Start from Template</h3>
+    <p>Use our pre-configured project template</p>
+  </div>
+</div>
 
-2. In your Android Studio project, follow these steps to add the AAR:
-   - Go to File > New > New Module
-   - Select "Import .JAR/.AAR Package" and click Next
-   - Browse and select the downloaded `hawcx.aar` file
-   - Click Finish
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
 
-3. Add the following to your app's `build.gradle` file:
+.grid-item {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
 
-```
-  gradle
-  dependencies {
-      implementation project(':hawcx')
-  }
-```
-4. Sync your project with Gradle files.
-5. You're now ready to use HawcxFramework in your existing project!
+.grid-item:hover {
+  background-color: #ddd;
+}
 
-For detailed instructions on how to use HawcxFramework's features in your application, please proceed to the First Steps section.
+.grid-item i {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+</style>
 
-## 2. Create a New Application
+## Next Steps
 
-If you're starting a new project and want to build it with HawcxFramework from the ground up, we recommend using our sample application as a starting point:
+After integrating HawcxFramework, explore our documentation to learn how to:
 
-1. Clone our sample application repository:
+1. Implement secure user authentication
+2. Enable biometric login
+3. Encrypt sensitive data
+4. Secure API communications
+5. Detect and prevent tampering
 
-```
-  git clone https://github.com/hawcx/android_app.git
-```
-2. Open the project in Android Studio.
-3. Rename the application package:
-  - Right-click on the package name in the Project view
-  - Select Refactor > Rename
-  - Choose a new package name that suits your project
-  - Click Refactor
-4. Update the applicationId in your app's build.gradle file to match your new package name.
-5. Customize the application name, icon, and other resources as needed for your project.
-6. Start building your application using HawcxFramework's features!
+For platform-specific integration guides, check out:
 
-For a detailed guide on the key features of HawcxFramework and how to implement them in your new application, please proceed to the next section.
+- [Java Integration Guide](android/java-integration.md)
+- [React Native Integration Guide](android/react-native-integration.md)
+- [Flutter Integration Guide](android/flutter-integration.md)
+
+If you encounter any issues during integration, refer to our [Troubleshooting Guide](troubleshoot.md) or contact our support team.
