@@ -10,7 +10,7 @@ This guide will walk you through the process of adding HawcxFramework to your ex
 
 ## Step 1: Add the HawcxFramework AAR
 
-1. Download the HawcxFramework AAR file from our [official website](https://www.hawcx.com/downloads/hawcxframework.aar).
+1. [Download](https://github.com/hawcx/android_sdk/releases/download/v0.2.1/hawcx.aar) the HawcxFramework AAR file
 
 2. In your Android project, create a new folder named `libs` in the `app` directory if it doesn't already exist.
 
@@ -24,7 +24,7 @@ This guide will walk you through the process of adding HawcxFramework to your ex
 
 ```gradle
 dependencies {
-    implementation files('libs/hawcxframework.aar')
+    implementation files('libs/hawcx.aar')
     // Other dependencies...
 }
 ```
