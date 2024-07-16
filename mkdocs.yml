@@ -1,4 +1,4 @@
-site_name: HawcxFramework
+site_name: Hawcx Framework
 site_url: https://hawcx.github.io/
 
 theme:
@@ -24,9 +24,10 @@ theme:
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
-      primary: teal
-      accent: lime
-
+      primary: indigo
+      accent: purple
+  logo: images/Logo_small_orange.png
+    
 extra_css:
   - css/custom.css
 
