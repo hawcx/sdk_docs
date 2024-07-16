@@ -1,3 +1,4 @@
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "8198f457b3e440248e3af20729bd47c5"}'></script><!-- End Cloudflare Web Analytics -->
 # Welcome to HawcxFramework Documentation
 
 Secure your mobile applications with HawcxFramework - the cutting-edge security solution for Android developers.
