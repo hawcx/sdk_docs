@@ -4,28 +4,28 @@ Experience HawcxFramework in action through our demo application. This demo show
 
 <div class="grid-container">
   <div class="grid-item" onclick="showVideo()">
-    <i class="fa fa-play-circle"></i>
-    <h3>Watch the Video</h3>
-    <p>See HawcxFramework in action</p>
+    <i style="font-size: 3rem; margin-top: 25px; opacity: 0.5" class="fa fa-play-circle"></i>
+    <h2>Watch the Video</h2>
+    <p style="margin-top: -15px">See HawcxFramework in action</p>
   </div>
 
-  <div class="grid-item" onclick="window.open('https://github.com/hawcx/demo-app', '_blank')">
-    <i class="fa fa-code"></i>
-    <h3>Get the Code</h3>
-    <p>Explore the demo app source</p>
+  <div class="grid-item" onclick="window.open('https://github.com/hawcx/android_app', '_blank')">
+    <i style="font-size: 3rem; margin-top: 25px; opacity: 0.5" class="fa fa-code"></i>
+    <h2>Get the Code</h2>
+    <p style="margin-top: -15px">Explore the demo app source</p>
   </div>
 
-  <div class="grid-item" onclick="window.open('https://github.com/hawcx/demo-app/releases/latest/download/hawcx-demo.apk', '_blank')">
-    <i class="fa fa-download"></i>
-    <h3>Download the App</h3>
-    <p>Try the demo on your device</p>
+  <div class="grid-item" onclick="window.open('https://github.com/hawcx/android_app/releases/latest/download/hawcx-demo.apk', '_blank')">
+    <i style="font-size: 3rem; margin-top: 25px; opacity: 0.5" class="fa fa-download"></i>
+    <h2>Download the App</h2>
+    <p style="margin-top: -15px">Try the demo on your device</p>
   </div>
 </div>
 
 <div id="videoModal" class="modal">
   <div class="modal-content">
     <span class="close">&times;</span>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ArcI4A5nvBo?si=qSdRqpxS4p2NkGui" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
   </div>
 </div>
 
@@ -92,7 +92,7 @@ window.onclick = function(event) {
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 700px;
 }
 
 .close {

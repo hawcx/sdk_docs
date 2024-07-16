@@ -13,7 +13,7 @@ Get up and running quickly with our pre-configured HawcxFramework template proje
    - Open a terminal or command prompt
    - Run the following command:
      ```
-     git clone https://github.com/hawcx/android-template.git
+     git clone https://github.com/hawcx/android_app
      ```
 
 2. **Open the Project in Android Studio**
@@ -59,7 +59,7 @@ Get up and running quickly with our pre-configured HawcxFramework template proje
 
 ## Next Steps
 
-- Review the [Java Integration Guide](java-integration.md) to understand the template code better
+- Please visit the [Java Integration Guide](java-integration.md) to understand the template code better and implement different functions. 
 - Explore additional [HawcxFramework Features](features.md) to enhance your app's security
 - Check our [Best Practices](best-practices.md) guide for optimal usage of HawcxFramework
 

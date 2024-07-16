@@ -16,6 +16,8 @@ This guide will walk you through the process of adding HawcxFramework to your ex
 
 3. Copy the downloaded AAR file into the `libs` folder.
 
+4. Please make sure that names match with the names provided in the document.
+
 ## Step 2: Update Gradle Configuration
 
 1. Open your app-level `build.gradle` file.

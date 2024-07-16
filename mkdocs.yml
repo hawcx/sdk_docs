@@ -32,18 +32,19 @@ extra_css:
   - css/custom.css
 
 nav:
-  - Home: index.md
+  # - Home: index.md
   - Introduction: introduction.md
   - Demo Application: demo-application.md
-  - Get Started: get-started.md
   - "----------------------------------------": "_separator.md" 
   - Android:
+    - Get Started: get-started.md
     - Existing Project: android/existing-project.md
     - New Project: android/new-project.md
     - Start from Template: android/template-project.md
     - Java Integration: android/java-integration.md
     - React Native Integration: android/react-integration.md
     - Flutter Integration: android/flutter-integration.md
+    - Best Practices: android/best-practices.md
     - Next Steps: android/next-steps.md
   - FAQs: faqs.md
   - Feature Requests: feature-requests.md

@@ -17,9 +17,10 @@ This guide will walk you through the process of creating a new Android project w
    - Click "Finish" to create the project
 
 2. **Add HawcxFramework AAR**
-   - Download the HawcxFramework AAR from our [official website](https://www.hawcx.com/downloads/hawcxframework.aar)
+   - [Download](https://github.com/hawcx/android_sdk/releases/download/v0.2.1/hawcx.aar) the HawcxFramework AAR file.
    - Create a new folder named `libs` in your project's `app` directory
    - Copy the downloaded AAR file into the `libs` folder
+   - Please make sure that names match with the names provided in the document.
 
 3. **Update Gradle Configuration**
    - Open your app-level `build.gradle` file

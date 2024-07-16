@@ -4,21 +4,21 @@ Ready to enhance your app's security with HawcxFramework? Choose the integration
 
 <div class="grid-container">
   <div class="grid-item" onclick="location.href='/android/existing-project'">
-    <i class="fa fa-plus-square"></i>
+    <i style="font-size: 3rem; margin-top: 25px; opacity: 0.5" class="fa fa-plus-square"></i>
     <h3>Integrate in Existing Project</h3>
-    <p>Add HawcxFramework to your current Android app</p>
+    <p style="margin-top: -15px">Add HawcxFramework to your current Android app</p>
   </div>
 
   <div class="grid-item" onclick="location.href='/android/new-project'">
-    <i class="fa fa-file-code"></i>
+    <i style="font-size: 3rem; margin-top: 25px; opacity: 0.5" class="fa fa-file-code"></i>
     <h3>Integrate in New Project</h3>
-    <p>Start a new Android project with HawcxFramework</p>
+    <p style="margin-top: -15px">Start a new Android project with HawcxFramework</p>
   </div>
 
   <div class="grid-item" onclick="location.href='/android/template-project'">
-    <i class="fa fa-clone"></i>
+    <i style="font-size: 3rem; margin-top: 25px; opacity: 0.5" class="fa fa-clone"></i>
     <h3>Start from Template</h3>
-    <p>Use our pre-configured project template</p>
+    <p style="margin-top: -15px">Use our pre-configured project template</p>
   </div>
 </div>
 
