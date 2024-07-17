@@ -14,13 +14,14 @@ This guide will walk you through the process of creating a new Android project w
    - Click on "File" > "New" > "New Project"
    - Choose "Empty Activity" and click "Next"
    - Set your application name, package name, and minimum SDK (21 or higher)
+   - Ensure that the build configuration language is set to 'Groovy DSL'
    - Click "Finish" to create the project
 
 2. **Add HawcxFramework AAR**
    - [Download](https://github.com/hawcx/android_sdk/releases/download/v0.2.1/hawcx.aar) the HawcxFramework AAR file.
    - Create a new folder named `libs` in your project's `app` directory
    - Copy the downloaded AAR file into the `libs` folder
-   - Please make sure that names match with the names provided in the document.
+   - Rename the AAR file to 'hawcxframework.aar'
 
 3. **Update Gradle Configuration**
    - Open your app-level `build.gradle` file
@@ -32,7 +33,7 @@ This guide will walk you through the process of creating a new Android project w
          // Other dependencies...
      }
      ```
-   - Sync your project with Gradle files
+   - Sync your project with Gradle files using the sync button in the toolbar
 
 4. **Initialize HawcxFramework**
    - Create a new Application class:
