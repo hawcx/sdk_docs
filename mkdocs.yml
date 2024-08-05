@@ -1,4 +1,4 @@
-site_name: Hawcx Framework
+site_name: Hawcx 
 site_url: https://hawcx.github.io/
 
 theme:
@@ -15,9 +15,9 @@ theme:
   language: en
   palette:
     - scheme: slate  # Set default to dark mode
-      primary: indigo
+      primary: white
       accent: purple
-  logo: images/Logo_orange.png
+  logo: images/Logo_Blue.png
     
 extra_css:
   - css/custom.css
