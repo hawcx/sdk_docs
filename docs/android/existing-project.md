@@ -84,34 +84,7 @@ HawcxAuth.login(username, password, new HawcxAuth.AuthCallback() {
 });
 ```
 
-### Encrypt Sensitive Data
 
-```java
-import com.hawcx.framework.crypto.HawcxCrypto;
-
-String sensitiveData = "This is sensitive information";
-String encryptedData = HawcxCrypto.encrypt(sensitiveData);
-// Store encryptedData securely
-```
-
-### Secure API Calls
-
-```java
-import com.hawcx.framework.network.HawcxApiClient;
-
-HawcxApiClient apiClient = new HawcxApiClient();
-apiClient.get("https://api.example.com/data", new HawcxApiClient.ApiCallback() {
-    @Override
-    public void onResponse(String response) {
-        // Handle API response
-    }
-
-    @Override
-    public void onError(String errorMessage) {
-        // Handle API error
-    }
-});
-```
 
 ## Next Steps
 

@@ -64,72 +64,7 @@ HawcxAuth.login("username", "password", new HawcxAuth.AuthCallback() {
 });
 ```
 
-## Secure Data Storage
 
-Store sensitive data securely using HawcxFramework's encryption:
-
-```java
-import com.hawcx.framework.storage.SecureStorage;
-
-// Store data
-SecureStorage.saveString("key", "sensitive_data");
-
-// Retrieve data
-String data = SecureStorage.getString("key", null);
-```
-
-## Encrypted Network Requests
-
-Make secure API calls using HawcxFramework's network module:
-
-```java
-import com.hawcx.framework.network.SecureApiClient;
-
-SecureApiClient apiClient = new SecureApiClient();
-apiClient.get("https://api.example.com/data", new SecureApiClient.ApiCallback() {
-    @Override
-    public void onSuccess(String response) {
-        // Handle successful response
-    }
-
-    @Override
-    public void onFailure(String errorMessage) {
-        // Handle API call failure
-    }
-});
-```
-
-## Biometric Authentication
-
-Implement biometric authentication for added security:
-
-```java
-import com.hawcx.framework.biometric.BiometricAuth;
-
-BiometricAuth.authenticate(this, new BiometricAuth.AuthCallback() {
-    @Override
-    public void onSuccess() {
-        // Handle successful biometric authentication
-    }
-
-    @Override
-    public void onFailure(String errorMessage) {
-        // Handle biometric authentication failure
-    }
-});
-```
-
-<!-- ## Tamper Detection
-
-Detect if your app has been tampered with:
-
-```java
-import com.hawcx.framework.security.TamperDetection;
-
-if (TamperDetection.isAppTampered()) {
-    // Handle tamper detection (e.g., log out user, display warning)
-}
-``` -->
 
 ## Best Practices
 

@@ -14,16 +14,7 @@ theme:
     - content.code.copy
   language: en
   palette:
-    - scheme: default
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
-      primary: indigo
-      accent: purple
-    - scheme: slate
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode
+    - scheme: slate  # Set default to dark mode
       primary: indigo
       accent: purple
   logo: images/Logo_small_orange.png
@@ -43,7 +34,6 @@ nav:
     - Start from Template: android/template-project.md
     - Java Integration: android/java-integration.md
     - React Native Integration: android/react-integration.md
-    - Flutter Integration: android/flutter-integration.md
     - Best Practices: android/best-practices.md
     - Next Steps: android/next-steps.md
   - FAQs: faqs.md

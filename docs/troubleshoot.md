@@ -26,9 +26,8 @@ Here's a comprehensive list of HawcxFramework error codes and their meanings:
 
 | Error Code | Description | Solution |
 |------------|-------------|----------|
-| HWCX-AUTH-001 | Invalid credentials | Verify username and password |
-| HWCX-AUTH-002 | User not found | Ensure the user is registered |
-| HWCX-AUTH-003 | Account locked | Contact support for account unlock |
+| HWCX-AUTH-001 | User not found | Ensure the user is registered |
+| HWCX-AUTH-002 | Account locked | Contact support for account unlock |
 | HWCX-CRYPTO-001 | Encryption failed | Check data format and encryption key |
 | HWCX-CRYPTO-002 | Decryption failed | Verify the encrypted data and key |
 | HWCX-NET-001 | Network connection error | Check internet connectivity |
