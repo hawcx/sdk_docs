@@ -72,7 +72,7 @@ This guide will walk you through the process of creating a new Android project w
              setContentView(R.layout.activity_main);
 
              // Example: Implement secure login
-             HawcxAuth.login("username", "password", new HawcxAuth.AuthCallback() {
+             HawcxAuth.login("username", new HawcxAuth.AuthCallback() {
                  @Override
                  public void onSuccess() {
                      // Handle successful login

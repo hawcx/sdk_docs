@@ -38,7 +38,7 @@ HawcxFramework provides secure user authentication methods:
 import com.hawcx.framework.auth.HawcxAuth;
 
 // User Registration
-HawcxAuth.register("username", "password", new HawcxAuth.AuthCallback() {
+HawcxAuth.register("username", new HawcxAuth.AuthCallback() {
     @Override
     public void onSuccess() {
         // Handle successful registration
@@ -51,7 +51,7 @@ HawcxAuth.register("username", "password", new HawcxAuth.AuthCallback() {
 });
 
 // User Login
-HawcxAuth.login("username", "password", new HawcxAuth.AuthCallback() {
+HawcxAuth.login("username", new HawcxAuth.AuthCallback() {
     @Override
     public void onSuccess() {
         // Handle successful login
