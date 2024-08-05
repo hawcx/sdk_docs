@@ -17,7 +17,7 @@ theme:
     - scheme: slate  # Set default to dark mode
       primary: indigo
       accent: purple
-  logo: images/Logo_small_orange.png
+  logo: images/Logo_orange.png
     
 extra_css:
   - css/custom.css
