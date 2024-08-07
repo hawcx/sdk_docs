@@ -9,16 +9,21 @@ theme:
     - navigation.top
     - search.suggest
     - search.highlight
+    - search.full-text
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
+    - navigation.sticky
   language: en
   palette:
     - scheme: slate  # Set default to dark mode
-      primary: white
-      accent: purple
+      primary: '#f5f5f5'  # Light grey instead of white
+      accent: '#00bfa5'   # Teal instead of purple
+  font:
+    text: "Lato"
+    code: "Source Code Pro"
   logo: images/Logo_Blue.png
-    
+
 extra_css:
   - css/custom.css
 
@@ -61,6 +66,23 @@ markdown_extensions:
 
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js
+ 
+  extra_css:
+  - css/custom.css
+
+custom_css:
+  /* Custom CSS for a more modern look */
+  button, .md-button {
+    border-radius: 5px;
+  }
+
+  .md-content {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  a {
+    transition: color 0.2s ease-in-out;
+  }
 
 copyright: |
   &copy; 2024 <a href="https://www.hawcx.com" target="_blank" rel="noopener">Hawcx Inc</a>
