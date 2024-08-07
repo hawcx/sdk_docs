@@ -15,16 +15,16 @@ theme:
     - content.code.copy
     - navigation.sticky
   language: en
-  palette:
-    - scheme: slate  # Dark mode
-      primary: '#121212'  # Very dark grey background
-      accent: '#00bfa5'   # Teal accent
-      text: '#f5f5f5'     # Very light grey text for better contrast
-      header: '#1c1c1c'   # Slightly lighter for headers
-      links: '#bbdefb'    # Lighter blue for links
-  font:
-    text: "Lato"
-    code: "Source Code Pro"
+#  palette:
+#    - scheme: slate  # Dark mode
+#      primary: '#121212'  # Very dark grey background
+#      accent: '#00bfa5'   # Teal accent
+#      text: '#f5f5f5'     # Very light grey text for better contrast
+#      header: '#1c1c1c'   # Slightly lighter for headers
+#      links: '#bbdefb'    # Lighter blue for links
+#  font:
+#    text: "Lato"
+#    code: "Source Code Pro"
   logo: images/Logo_Blue.png
 
 extra_css:
