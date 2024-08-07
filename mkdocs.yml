@@ -34,7 +34,7 @@ nav:
   # - Home: index.md
   - Introduction: introduction.md
   - Demo Application: demo-application.md
-  - "----------------------------------------": "_separator.md" 
+  - "______________________________________": "_separator.md" 
   - Android:
     - Get Started: get-started.md
     - Existing Project: android/existing-project.md
