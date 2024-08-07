@@ -1,6 +1,6 @@
-# React Native Integration Guide for HawcxFramework
+# React Native Integration Guide for Hawcx
 
-This guide will walk you through the process of integrating HawcxFramework into your React Native application.
+This guide will walk you through the process of integrating Hawcx into your React Native application.
 
 ## Prerequisites
 
@@ -9,9 +9,9 @@ This guide will walk you through the process of integrating HawcxFramework into 
 
 ## Integration Steps
 
-1. **Add HawcxFramework to your Android project**
+1. **Add Hawcx to your Android project**
 
-   In your React Native project, navigate to the `android/app` directory and create a `libs` folder if it doesn't exist. Place the HawcxFramework AAR file in this folder.
+   In your React Native project, navigate to the `android/app` directory and create a `libs` folder if it doesn't exist. Place the HawcxAuth AAR file in this folder.
 
 2. **Update build.gradle**
 
@@ -19,7 +19,7 @@ This guide will walk you through the process of integrating HawcxFramework into 
 
    ```gradle
    dependencies {
-       implementation files('libs/hawcxframework.aar')
+       implementation files('libs/HawcxAuth.aar')
    }
    ```
 
@@ -34,13 +34,13 @@ This guide will walk you through the process of integrating HawcxFramework into 
    import com.facebook.react.bridge.ReactContextBaseJavaModule;
    import com.facebook.react.bridge.ReactMethod;
    import com.facebook.react.bridge.Promise;
-   import com.hawcx.framework.HawcxFramework;
+   import com.hawcx.framework.HawcxAuth;
    import com.hawcx.framework.auth.HawcxAuth;
 
    public class HawcxModule extends ReactContextBaseJavaModule {
        public HawcxModule(ReactApplicationContext reactContext) {
            super(reactContext);
-           HawcxFramework.init(reactContext);
+           HawcxAuth.init(reactContext);
        }
 
        @Override
@@ -63,7 +63,7 @@ This guide will walk you through the process of integrating HawcxFramework into 
            });
        }
 
-       // Add other methods for different HawcxFramework features
+       // Add other methods for different HawcxAuth features
    }
    ```
 
@@ -111,9 +111,9 @@ This guide will walk you through the process of integrating HawcxFramework into 
    }
    ```
 
-6. **Use HawcxFramework in React Native**
+6. **Use HawcxAuth in React Native**
 
-   Now you can use HawcxFramework in your React Native components:
+   Now you can use HawcxAuth in your React Native components:
 
    ```javascript
    import { NativeModules } from 'react-native';
