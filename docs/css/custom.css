@@ -56,6 +56,20 @@ nav a {
   margin: 10px 0; /* Margin top and bottom for spacing */
 }
 
+/* Specific styling for the copy button inside code blocks */
+pre .copy-button {
+  background-color: #444; /* Adjust background color as needed */
+  color: #fff; /* Ensure text is visible */
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+pre .copy-button:hover {
+  background-color: #666; /* Slightly darker background on hover */
+}
+
 /* Buttons */
 button {
   background-color: #007bff; /* Blue background for buttons */
