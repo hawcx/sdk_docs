@@ -15,7 +15,7 @@ theme:
     - content.code.copy
     - navigation.sticky
   language: en
-palette:
+  palette:
     - scheme: slate  # Dark mode
       primary: '#121212'  # Very dark grey background
       accent: '#00bfa5'   # Teal accent
