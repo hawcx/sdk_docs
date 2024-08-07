@@ -29,28 +29,30 @@ a:hover {
 
 /* Navigation */
 nav {
-  background-color: #007bff; /* Blue background for navigation */
-  color: #fff; /* White text */
+  background-color: #f0f0f0; /* Light grey background for navigation */
+  color: #333; /* Dark grey text for better readability */
+  border-bottom: 1px solid #ddd; /* Optional: add a subtle border for separation */
 }
 
 nav a {
-  color: #fff; /* Ensure links in navigation are white */
+  color: #007bff; /* Blue color for links to match your logo */
 }
 
 .nav-item {
   padding: 15px 20px;
   display: inline-block;
-  color: #fff; /* White text for nav items */
+  color: #333; /* Dark grey text for nav items */
 }
 
 .nav-item:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+  background-color: #e0e0e0; /* Slightly darker grey on hover */
+  color: #007bff; /* Blue text on hover */
 }
 
 /* Navigation Separator */
 .nav-separator {
   height: 4px;
-  background-color: rgba(255, 255, 255, 0.3); /* Subtle white separator */
+  background-color: rgba(0, 0, 0, 0.1); /* Subtle black separator */
   margin: 10px 0; /* Margin top and bottom for spacing */
 }
 
