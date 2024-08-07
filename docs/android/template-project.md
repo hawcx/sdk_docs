@@ -1,6 +1,6 @@
 # Starting from a Template Project
 
-Get up and running quickly with our pre-configured HawcxFramework template project. This approach is perfect for developers who want to start with a solid foundation and best practices already in place.
+Get up and running quickly with our pre-configured Hawcx template project. This approach is perfect for developers who want to start with a solid foundation and best practices already in place.
 
 ## Prerequisites
 
@@ -30,9 +30,9 @@ Get up and running quickly with our pre-configured HawcxFramework template proje
 
 4. **Update Configuration**
    - Open `app/src/main/java/com/hawcx/template/MyApplication.java`
-   - Replace the placeholder API key with your actual HawcxFramework API key:
+   - Replace the placeholder API key with your actual Hawcx API key:
      ```java
-     HawcxFramework.init(this, "YOUR_API_KEY_HERE");
+     HawcxAuth.init(this, "YOUR_API_KEY_HERE");
      ```
 
 5. **Customize the Template**
@@ -49,8 +49,8 @@ Get up and running quickly with our pre-configured HawcxFramework template proje
 ## Template Structure
 
 - `app/src/main/java/com/hawcx/template/`
-  - `MyApplication.java`: Application class with HawcxFramework initialization
-  - `MainActivity.java`: Main activity demonstrating basic HawcxFramework usage
+  - `MyApplication.java`: Application class with HawcxAuth initialization
+  - `MainActivity.java`: Main activity demonstrating basic HawcxAuth usage
   - `LoginActivity.java`: Example implementation of secure login
   - `SignupActivity.java`: Example implementation of secure user registration
   - `SecureStorageManager.java`: Utility class for secure data storage
@@ -60,7 +60,7 @@ Get up and running quickly with our pre-configured HawcxFramework template proje
 ## Next Steps
 
 - Please visit the [Java Integration Guide](java-integration.md) to understand the template code better and implement different functions. 
-- Explore additional [HawcxFramework Features](features.md) to enhance your app's security
-- Check our [Best Practices](best-practices.md) guide for optimal usage of HawcxFramework
+- Explore additional [Hawcx Features](features.md) to enhance your app's security
+- Check our [Best Practices](best-practices.md) guide for optimal usage of Hawcx
 
-Congratulations! You now have a fully functional Android project with HawcxFramework integration, ready for you to build upon.
+Congratulations! You now have a fully functional Android project with HawcxAuth integration, ready for you to build upon.
