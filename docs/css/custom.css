@@ -33,9 +33,14 @@ nav {
   color: #fff; /* White text */
 }
 
+nav a {
+  color: #fff; /* Ensure links in navigation are white */
+}
+
 .nav-item {
   padding: 15px 20px;
   display: inline-block;
+  color: #fff; /* White text for nav items */
 }
 
 .nav-item:hover {
@@ -79,4 +84,3 @@ code {
   padding: 2px 5px;
   border-radius: 3px;
 }
-
