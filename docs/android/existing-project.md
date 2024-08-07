@@ -1,6 +1,6 @@
-# Integrating HawcxFramework into an Existing Project
+# Integrating Hawcx into an Existing Project
 
-This guide will walk you through the process of adding HawcxFramework to your existing Android project. By following these steps, you'll be able to enhance your app's security features quickly and efficiently.
+This guide will walk you through the process of adding Hawcx to your existing Android project. By following these steps, you'll be able to enhance your app's security features quickly and efficiently.
 
 ## Prerequisites
 
@@ -8,9 +8,9 @@ This guide will walk you through the process of adding HawcxFramework to your ex
 - An existing Android project
 - Minimum SDK version 21 or higher
 
-## Step 1: Add the HawcxFramework AAR
+## Step 1: Add the Hawcx AAR
 
-1. [Download](https://github.com/hawcx/android_sdk/releases/download/v0.2.1/hawcx.aar) the HawcxFramework AAR file
+1. [Download](https://github.com/hawcx/android_sdk/releases/download/v0.2.1/hawcx.aar) the Hawcx AAR file
 
 2. In your Android project, create a new folder named `libs` in the `app` directory if it doesn't already exist.
 
@@ -33,20 +33,20 @@ dependencies {
 
 3. Sync your project with the Gradle files.
 
-## Step 3: Initialize HawcxFramework
+## Step 3: Initialize Hawcx
 
 1. Open your main Application class. If you don't have one, create a new class that extends `Application`.
 
-2. Add the following code to initialize HawcxFramework:
+2. Add the following code to initialize Hawcx:
 
 ```java
-import com.hawcx.framework.HawcxFramework;
+import com.hawcx.framework.Hawcx;
 
 public class MyApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        HawcxFramework.init(this);
+        Hawcx.init(this);
     }
 }
 ```
@@ -61,9 +61,9 @@ public class MyApplication extends Application {
 </application>
 ```
 
-## Step 4: Implement HawcxFramework Features
+## Step 4: Implement Hawcx Features
 
-Now that HawcxFramework is integrated into your project, you can start using its features. Here are a few examples:
+Now that Hawcx is integrated into your project, you can start using its features. Here are a few examples:
 
 ### Secure User Authentication
 
@@ -88,10 +88,10 @@ HawcxAuth.login(username, password, new HawcxAuth.AuthCallback() {
 
 ## Next Steps
 
-- Explore the [HawcxFramework API Documentation](api-docs.md) for a complete list of available features and methods.
+- Explore the [Hawcx API Documentation](api-docs.md) for a complete list of available features and methods.
 - Implement [Biometric Authentication](biometric-auth.md) for enhanced security.
-- Learn about [Best Practices](best-practices.md) when using HawcxFramework.
+- Learn about [Best Practices](best-practices.md) when using Hawcx.
 
 If you encounter any issues during integration, please refer to our [Troubleshooting Guide](../troubleshoot.md) or contact our support team.
 
-Congratulations! You've successfully integrated HawcxFramework into your existing Android project. Your app is now equipped with advanced security features to protect your users' data.
+Congratulations! You've successfully integrated Hawcx into your existing Android project. Your app is now equipped with advanced security features to protect your users' data.
