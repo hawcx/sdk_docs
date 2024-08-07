@@ -1,6 +1,6 @@
-# Creating a New Project with HawcxFramework
+# Creating a New Project with Hawcx
 
-This guide will walk you through the process of creating a new Android project with HawcxFramework integration from scratch.
+This guide will walk you through the process of creating a new Android project with Hawcx integration from scratch.
 
 ## Prerequisites
 
@@ -16,8 +16,8 @@ This guide will walk you through the process of creating a new Android project w
    - Set your application name, package name, and minimum SDK (21 or higher)
    - Click "Finish" to create the project
 
-2. **Add HawcxFramework AAR**
-   - [Download](https://github.com/hawcx/android_sdk/releases/download/v0.2.1/hawcx.aar) the HawcxFramework AAR file.
+2. **Add HawcxAuth AAR**
+   - [Download](https://github.com/hawcx/android_sdk/releases/download/v0.2.1/hawcx.aar) the HawcxAuth AAR file.
    - Create a new folder named `libs` in your project's `app` directory
    - Copy the downloaded AAR file into the `libs` folder
    - Please make sure that names match with the names provided in the document.
@@ -28,24 +28,24 @@ This guide will walk you through the process of creating a new Android project w
 
      ```gradle
      dependencies {
-         implementation files('libs/hawcxframework.aar')
+         implementation files('libs/HawcxAuth.aar')
          // Other dependencies...
      }
      ```
    - Sync your project with Gradle files
 
-4. **Initialize HawcxFramework**
+4. **Initialize HawcxAuth**
    - Create a new Application class:
 
      ```java
      import android.app.Application;
-     import com.hawcx.framework.HawcxFramework;
+     import com.hawcx.framework.HawcxAuth;
 
      public class MyApplication extends Application {
          @Override
          public void onCreate() {
              super.onCreate();
-             HawcxFramework.init(this);
+             HawcxAuth.init(this);
          }
      }
      ```
@@ -59,8 +59,8 @@ This guide will walk you through the process of creating a new Android project w
      </application>
      ```
 
-5. **Implement HawcxFramework Features**
-   - Now you can start using HawcxFramework features in your activities and fragments. For example:
+5. **Implement Hawcx Features**
+   - Now you can start using Hawcx features in your activities and fragments. For example:
 
      ```java
      import com.hawcx.framework.auth.HawcxAuth;
@@ -89,8 +89,8 @@ This guide will walk you through the process of creating a new Android project w
 
 ## Next Steps
 
-- Explore our [Java Integration Guide](java-integration.md) for more detailed usage of HawcxFramework
-- Learn about [Best Practices](best-practices.md) when using HawcxFramework
+- Explore our [Java Integration Guide](java-integration.md) for more detailed usage of Hawcx
+- Learn about [Best Practices](best-practices.md) when using Hawcx
 - Check out our [Sample Projects](sample-projects.md) for inspiration
 
-Congratulations! You've successfully created a new Android project with HawcxFramework integration.
+Congratulations! You've successfully created a new Android project with Hawcx integration.
