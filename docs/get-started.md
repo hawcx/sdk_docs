@@ -1,18 +1,18 @@
-# Get Started with HawcxFramework
+# Get Started with Hawcx
 
-Ready to enhance your app's security with HawcxFramework? Choose the integration method that best suits your project:
+Ready to enhance your app's security with Hawcx? Choose the integration method that best suits your project:
 
 <div class="grid-container">
   <div class="grid-item" onclick="location.href='/android/existing-project'">
     <i style="font-size: 3rem; margin-top: 25px; opacity: 0.5" class="fa fa-plus-square"></i>
     <h3>Integrate in Existing Project</h3>
-    <p style="margin-top: -15px">Add HawcxFramework to your current Android app</p>
+    <p style="margin-top: -15px">Add Hawcx to your current Android app</p>
   </div>
 
   <div class="grid-item" onclick="location.href='/android/new-project'">
     <i style="font-size: 3rem; margin-top: 25px; opacity: 0.5" class="fa fa-file-code"></i>
     <h3>Integrate in New Project</h3>
-    <p style="margin-top: -15px">Start a new Android project with HawcxFramework</p>
+    <p style="margin-top: -15px">Start a new Android project with Hawcx</p>
   </div>
 
   <div class="grid-item" onclick="location.href='/android/template-project'">
@@ -51,7 +51,7 @@ Ready to enhance your app's security with HawcxFramework? Choose the integration
 
 ## Next Steps
 
-After integrating HawcxFramework, explore our documentation to learn how to:
+After integrating Hawcx, explore our documentation to learn how to:
 
 1. Implement secure user authentication
 2. Enable biometric login
