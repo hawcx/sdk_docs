@@ -1,4 +1,4 @@
-site_name: Hawcx 
+site_name: Hawcx Documentation
 site_url: https://hawcx.github.io/
 
 theme:
@@ -34,7 +34,7 @@ nav:
   # - Home: index.md
   - Introduction: introduction.md
   - Demo Application: demo-application.md
-  - "______________________________________": "_separator.md" 
+  - "_________________________________________________": "_separator.md" 
   - Android:
     - Get Started: get-started.md
     - Existing Project: android/existing-project.md
