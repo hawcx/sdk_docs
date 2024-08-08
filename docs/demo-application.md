@@ -1,4 +1,4 @@
-# Demo Application
+<!-- # Demo Application
 
 Experience HawcxFramework in action through our demo application. This demo showcases the key features and security capabilities of HawcxFramework in a real-world scenario.
 
@@ -121,4 +121,6 @@ Our demo application showcases the following key features of HawcxFramework:
 4. Secure API Communications
 5. Tamper Detection
 
-Explore the demo to see how HawcxFramework can enhance the security of your Android application.
+Explore the demo to see how HawcxFramework can enhance the security of your Android application. -->
+
+# Stay tuned! Coming soon!
