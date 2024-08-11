@@ -6,11 +6,11 @@ This guide will walk you through the process of adding Hawcx to your existing An
 
 - Android Studio installed on your development machine
 - An existing Android project
-- Minimum SDK version 21 or higher
+- Minimum SDK version 26 or higher
 
 ## Step 1: Add the Hawcx AAR
 
-1. [Download](https://github.com/hawcx/android_sdk/releases/download/v0.2.1/hawcx.aar) the Hawcx AAR file
+1. [Download](https://github.com/hawcx/android_sdk/releases/latest) the Hawcx AAR file
 
 2. In your Android project, create a new folder named `libs` in the `app` directory if it doesn't already exist.
 
@@ -40,14 +40,13 @@ dependencies {
 2. Add the following code to initialize Hawcx:
 
 ```java
-import com.hawcx.framework.Hawcx;
+import com.hawcx.HawcxInitializer;
 
 public class MyApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        Hawcx.init(this);
-    }
+        HawcxInitializer.getInstance().init(this, "YOUR_API_KEY_HERE");    }
 }
 ```
 
@@ -68,20 +67,25 @@ Now that Hawcx is integrated into your project, you can start using its features
 ### Secure User Authentication
 
 ```java
-import com.hawcx.framework.auth.HawcxAuth;
+import com.hawcx.auth.SignIn;
 
 // In your login activity or fragment
-HawcxAuth.login(username, password, new HawcxAuth.AuthCallback() {
-    @Override
-    public void onSuccess() {
-        // Handle successful login
-    }
+SignIn loginAct = HawcxInitializer.getInstance().getSignIn();
+// Check last logged in user and signal biometric auth if applicable
+loginAct.checkLastUser(this);
 
-    @Override
-    public void onFailure(String errorMessage) {
-        // Handle login failure
-    }
-});
+loginAct.signIn(email, this);
+
+@Override
+public void onSuccessfulLogin(String loggedInEmail) {
+    // Handle successful login
+}
+
+@Override
+public void showError(String errorMessage) {
+    // Handle login failure
+}
+
 ```
 
 

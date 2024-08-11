@@ -13,11 +13,11 @@ This guide will walk you through the process of creating a new Android project w
    - Open Android Studio
    - Click on "File" > "New" > "New Project"
    - Choose "Empty Activity" and click "Next"
-   - Set your application name, package name, and minimum SDK (21 or higher)
+   - Set your application name, package name, and minimum SDK (26 or higher)
    - Click "Finish" to create the project
 
 2. **Add HawcxAuth AAR**
-   - [Download](https://github.com/hawcx/android_sdk/releases/download/v0.2.1/hawcx.aar) the HawcxAuth AAR file.
+   - [Download](https://github.com/hawcx/android_sdk/releases/latest) the HawcxAuth AAR file.
    - Create a new folder named `libs` in your project's `app` directory
    - Copy the downloaded AAR file into the `libs` folder
    - Please make sure that names match with the names provided in the document.
@@ -38,16 +38,16 @@ This guide will walk you through the process of creating a new Android project w
    - Create a new Application class:
 
      ```java
-     import android.app.Application;
-     import com.hawcx.framework.HawcxAuth;
+        import android.app.Application;
+        import com.hawcx.HawcxInitializer;
 
-     public class MyApplication extends Application {
-         @Override
-         public void onCreate() {
-             super.onCreate();
-             HawcxAuth.init(this);
-         }
-     }
+        public class MyApplication extends Application {
+            @Override
+            public void onCreate() {
+                super.onCreate();
+                HawcxInitializer.getInstance().init(this, "YOUR_API_KEY_HERE");
+            }
+        }
      ```
    - Register the Application class in your `AndroidManifest.xml`:
 
@@ -63,26 +63,46 @@ This guide will walk you through the process of creating a new Android project w
    - Now you can start using Hawcx features in your activities and fragments. For example:
 
      ```java
-     import com.hawcx.framework.auth.HawcxAuth;
+    import com.hawcx.auth.SignIn;
+    import com.hawcx.HawcxInitializer;
 
-     public class MainActivity extends AppCompatActivity {
+     public class MainActivity extends AppCompatActivity implements SignIn.SignInCallback {
          @Override
          protected void onCreate(Bundle savedInstanceState) {
              super.onCreate(savedInstanceState);
              setContentView(R.layout.activity_main);
 
              // Example: Implement secure login
-             HawcxAuth.login("username", new HawcxAuth.AuthCallback() {
-                 @Override
-                 public void onSuccess() {
-                     // Handle successful login
-                 }
+             // User Login
+            SignIn loginAct = HawcxInitializer.getInstance().getSignIn();
 
-                 @Override
-                 public void onFailure(String errorMessage) {
-                     // Handle login failure
-                 }
-             });
+            // Check last logged in user and signal biometric auth if applicable
+            loginAct.checkLastUser(this);
+
+            loginAct.signIn(email, this);
+
+            }
+            @Override
+            public void onSuccessfulLogin(String loggedInEmail) {
+                // Handle successful login
+            }
+
+            @Override
+            public void showError(String errorMessage) {
+                // Handle login failure
+            }
+
+            // If lastuser found
+            @Override
+            public void initiateBiometricLogin(Runnable onSuccess) {
+                // Handle Biometric Auth 
+            }
+
+            // If no last user is found 
+            @Override
+                public void showEmailSignInScreen() {
+                    // Handle the Email screen
+                }
          }
      }
      ```
