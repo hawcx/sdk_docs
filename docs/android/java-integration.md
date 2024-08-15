@@ -6,10 +6,7 @@ This guide provides detailed instructions on how to use Hawcx in your Java Andro
 
 1. [Initialization](#initialization)
 2. [User Authentication](#user-authentication)
-3. [Secure Data Storage](#secure-data-storage)
-4. [Encrypted Network Requests](#encrypted-network-requests)
-5. [Biometric Authentication](#biometric-authentication)
-6. [Tamper Detection](#tamper-detection)
+3. [Biometric Authentication](#biometric-authentication)
 
 ## Initialization
 
@@ -17,13 +14,13 @@ Before using any Hawcx features, you need to initialize it in your Application c
 
 ```java
 import android.app.Application;
-import com.hawcx.framework.HawcxAuth;
+import com.hawcx.HawcxInitializer;
 
 public class MyApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        HawcxAuth.init(this, "YOUR_API_KEY_HERE");
+        HawcxInitializer.getInstance().init(this, "YOUR_API_KEY_HERE");
     }
 }
 ```
@@ -32,38 +29,75 @@ Don't forget to register this Application class in your AndroidManifest.xml.
 
 ## User Authentication
 
-HawcxAuth provides secure user authentication methods:
+HawcxInitializer provides secure user authentication methods:
 
 ```java
-import com.hawcx.framework.auth.HawcxAuth;
+import com.hawcx.auth.SignUp;
+import com.hawcx.auth.SignIn;
+import com.hawcx.HawcxInitializer;
 
 // User Registration
-HawcxAuth.register("username", new HawcxAuth.AuthCallback() {
-    @Override
-    public void onSuccess() {
-        // Handle successful registration
-    }
+SingUp registerAct = HawcxInitializer.getInstance().getSignUp();
 
-    @Override
-    public void onFailure(String errorMessage) {
-        // Handle registration failure
-    }
-});
+registerAct.signUp("username", this::onSuccessHandler, this::onFailureHandler);
+
 
 // User Login
-HawcxAuth.login("username", new HawcxAuth.AuthCallback() {
-    @Override
-    public void onSuccess() {
-        // Handle successful login
-    }
+SignIn loginAct = HawcxInitializer.getInstance().getSignIn();
 
-    @Override
-    public void onFailure(String errorMessage) {
-        // Handle login failure
-    }
-});
+// Check last logged in user and signal biometric auth if applicable
+loginAct.checkLastUser(this);
+
+loginAct.signIn(email, this);
+
+@Override
+public void onSuccessfulLogin(String loggedInEmail) {
+    // Handle successful login
+}
+
+@Override
+public void showError(String errorMessage) {
+    // Handle login failure
+}
+
 ```
 
+## Biometric Authentication
+
+HawcxInitializer's signIn object provides biometric authentication to be implemented:
+
+```java
+import androidx.biometric.BiometricManager;
+import androidx.biometric.BiometricPrompt;
+import com.hawcx.auth.SignIn;
+
+
+public class LoginActivity extends AppCompatActivity implements SignIn.SignInCallback {
+
+ @Override
+    protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_auth);
+
+        signIn = HawcxInitializer.getInstance().getSignIn();
+        // Check last logged in user and signal biometric auth if applicable
+        signIn.checkLastUser(this);
+    }
+
+// If lastuser found
+@Override
+    public void initiateBiometricLogin(Runnable onSuccess) {
+        // Handle Biometric Auth 
+    }
+
+// If no last user is found 
+@Override
+    public void showEmailSignInScreen() {
+        // Handle the Email screen
+    }
+}
+
+```
 
 
 ## Best Practices
