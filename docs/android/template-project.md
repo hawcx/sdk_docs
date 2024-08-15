@@ -13,7 +13,7 @@ Get up and running quickly with our pre-configured Hawcx template project. This 
    - Open a terminal or command prompt
    - Run the following command:
      ```
-     git clone https://github.com/hawcx/android_app
+     git clone https://github.com/hawcx/authenticator
      ```
 
 2. **Open the Project in Android Studio**
@@ -57,10 +57,10 @@ Get up and running quickly with our pre-configured Hawcx template project. This 
 - `app/src/main/res/layout/`
   - XML layout files for activities
 
-## Next Steps
+<!-- ## Next Steps
 
 - Please visit the [Java Integration Guide](java-integration.md) to understand the template code better and implement different functions. 
 - Explore additional [Hawcx Features](features.md) to enhance your app's security
 - Check our [Best Practices](best-practices.md) guide for optimal usage of Hawcx
 
-Congratulations! You now have a fully functional Android project with HawcxAuth integration, ready for you to build upon.
+Congratulations! You now have a fully functional Android project with HawcxAuth integration, ready for you to build upon. -->
