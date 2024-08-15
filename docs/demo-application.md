@@ -1,21 +1,21 @@
-<!-- # Demo Application
+# Demo Application
 
 Experience Hawcx Authentication in action through our demo application. This demo showcases the key features and security capabilities of Hawcx Authentication in a real-world scenario.
 
 <div class="grid-container">
-  <div class="grid-item" onclick="showVideo()">
+  <!-- <div class="grid-item" onclick="showVideo()">
     <i style="font-size: 3rem; margin-top: 25px; opacity: 0.5" class="fa fa-play-circle"></i>
     <h2>Watch the Video</h2>
     <p style="margin-top: -15px">See Hawcx Authentication in action</p>
-  </div>
+  </div> -->
 
-  <div class="grid-item" onclick="window.open('https://github.com/hawcx/android_app', '_blank')">
+  <div class="grid-item" onclick="window.open('https://github.com/hawcx/authenticator', '_blank')">
     <i style="font-size: 3rem; margin-top: 25px; opacity: 0.5" class="fa fa-code"></i>
     <h2>Get the Code</h2>
     <p style="margin-top: -15px">Explore the demo app source</p>
   </div>
 
-  <div class="grid-item" onclick="window.open('https://github.com/hawcx/android_app/releases/latest/download/hawcx-demo.apk', '_blank')">
+  <div class="grid-item" onclick="window.open('https://github.com/hawcx/authenticator/releases/download/app/hawcx-authenticator.apk', '_blank')">
     <i style="font-size: 3rem; margin-top: 25px; opacity: 0.5" class="fa fa-download"></i>
     <h2>Download the App</h2>
     <p style="margin-top: -15px">Try the demo on your device</p>
@@ -121,6 +121,5 @@ Our demo application showcases the following key features of Hawcx Authenticatio
 4. Secure API Communications
 5. Tamper Detection
 
-Explore the demo to see how Hawcx Authentication can enhance the security of your Android application. -->
+Explore the demo to see how Hawcx Authentication can enhance the security of your Android application.
 
-# Stay tuned! Coming soon!
