@@ -17,7 +17,7 @@ This guide will walk you through the process of creating a new Android project w
    - Click "Finish" to create the project
 
 2. **Add HawcxAuth AAR**
-   - [Download](https://github.com/hawcx/android_sdk/releases/latest) the HawcxAuth AAR file.
+   - [Download](https://github.com/hawcx/authenticator/releases/latest) the HawcxAuth AAR file.
    - Create a new folder named `libs` in your project's `app` directory
    - Copy the downloaded AAR file into the `libs` folder
    - Please make sure that names match with the names provided in the document.

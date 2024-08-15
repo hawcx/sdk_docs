@@ -9,13 +9,13 @@ Experience Hawcx Authentication in action through our demo application. This dem
     <p style="margin-top: -15px">See Hawcx Authentication in action</p>
   </div>
 
-  <div class="grid-item" onclick="window.open('https://github.com/hawcx/android_app', '_blank')">
+  <div class="grid-item" onclick="window.open('https://github.com/hawcx/authenticator', '_blank')">
     <i style="font-size: 3rem; margin-top: 25px; opacity: 0.5" class="fa fa-code"></i>
     <h2>Get the Code</h2>
     <p style="margin-top: -15px">Explore the demo app source</p>
   </div>
 
-  <div class="grid-item" onclick="window.open('https://github.com/hawcx/android_app/releases/latest/download/hawcx-demo.apk', '_blank')">
+  <div class="grid-item" onclick="window.open('https://github.com/hawcx/authenticator/releases/latest', '_blank')">
     <i style="font-size: 3rem; margin-top: 25px; opacity: 0.5" class="fa fa-download"></i>
     <h2>Download the App</h2>
     <p style="margin-top: -15px">Try the demo on your device</p>

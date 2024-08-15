@@ -10,7 +10,7 @@ This guide will walk you through the process of adding Hawcx to your existing An
 
 ## Step 1: Add the Hawcx AAR
 
-1. [Download](https://github.com/hawcx/android_sdk/releases/latest) the Hawcx AAR file
+1. [Download](https://github.com/hawcx/authenticator/releases/latest) the Hawcx AAR file
 
 2. In your Android project, create a new folder named `libs` in the `app` directory if it doesn't already exist.
 
