@@ -25,7 +25,7 @@ theme:
 #  font:
 #    text: "Lato"
 #    code: "Source Code Pro"
-  logo: images/Logo_Blue.png
+  logo: images/Logo-White.png
 
 extra_css:
   - css/custom.css

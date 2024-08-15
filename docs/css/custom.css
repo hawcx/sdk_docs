@@ -29,9 +29,9 @@ a:hover {
 
 /* Navigation */
 nav {
-  background-color: #f0f0f0; /* Light grey background for navigation */
-  color: #333; /* Dark grey text for better readability */
-  border-bottom: 1px solid #ddd; /* Optional: add a subtle border for separation */
+  /* background-color: #f0f0f0;  */
+  /* color: #333;  */
+  /* border-bottom: 1px solid #ddd;  */
 }
 
 nav a {
@@ -101,5 +101,9 @@ pre button.copy-code-button {
 
 pre button.copy-code-button:hover {
   background-color: #555555; /* Highlight on hover */
+}
+
+.md-header img {
+  transform: scale(1.5);
 }
 
