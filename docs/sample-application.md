@@ -1,10 +1,10 @@
 # Sample Application
 
-Experience the power of HawcxFramework firsthand with our sample application. This section guides you through two options: installing a pre-built APK on your Android device and setting up the sample Java application in Android Studio for a more in-depth exploration.
+Experience the power of Hawcx Authentication firsthand with our sample application. This section guides you through two options: installing a pre-built APK on your Android device and setting up the sample Java application in Android Studio for a more in-depth exploration.
 
 ## Download and Install the APK
 
-To quickly see HawcxFramework in action, you can download and install our pre-built APK on your Android device.
+To quickly see Hawcx Authentication in action, you can download and install our pre-built APK on your Android device.
 
 1. On your Android device, click the following link to download the APK:
    [Download Hawcx Demo APK](https://github.com/hawcx/android_app/releases/download/0.0.3/hawcx-demo.apk)
@@ -46,13 +46,13 @@ git clone https://github.com/hawcx/android_app.git
 
 ## Exploring the Sample Application
 
-The sample application demonstrates key features of HawcxFramework, including:
+The sample application demonstrates key features of Hawcx Authentication, including:
 
 - Secure user registration
 - Biometric authentication
 - Encrypted data storage
 - Secure API communication
 
-Feel free to explore the application's functionality and examine the code to see how HawcxFramework is integrated and utilized.
+Feel free to explore the application's functionality and examine the code to see how Hawcx Authentication is integrated and utilized.
 
 For any issues or questions about the sample application, please refer to our [GitHub repository](https://github.com/hawcx/android_app) or contact our support team.

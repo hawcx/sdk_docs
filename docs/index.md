@@ -5,9 +5,9 @@ Secure your mobile applications with HawcxAuth - the next-gen passwordless platf
 
 ## Quick Navigation
 
-- [Introduction](introduction.md): Learn about HawcxFramework and its benefits.
-- [Demo Application](demo-application.md): Experience HawcxFramework in action.
-- [Get Started](get-started.md): Set up HawcxFramework in your project.
+- [Introduction](introduction.md): Learn about Hawcx Authentication and its benefits.
+- [Demo Application](demo-application.md): Experience Hawcx Authentication in action.
+- [Get Started](get-started.md): Set up Hawcx Authentication in your project.
 
 ## Android Integration
 
@@ -24,4 +24,4 @@ Secure your mobile applications with HawcxAuth - the next-gen passwordless platf
 - [Feedback / Complaints](feedback.md): Share your thoughts or concerns.
 - [Troubleshoot](troubleshoot.md): Solve common integration issues.
 
-Get started with HawcxFramework today and take your app's security to the next level!
+Get started with Hawcx Authentication today and take your app's security to the next level!
