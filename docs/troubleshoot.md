@@ -1,18 +1,18 @@
 # Troubleshooting Guide
 
-This guide provides solutions for common issues you might encounter while using HawcxFramework, along with a comprehensive list of error codes.
+This guide provides solutions for common issues you might encounter while using Hawcx Authentication, along with a comprehensive list of error codes.
 
 ## General Troubleshooting Tips
 
-1. Ensure you're using the latest version of HawcxFramework.
-2. Check that HawcxFramework is properly initialized in your application.
+1. Ensure you're using the latest version of Hawcx Authentication.
+2. Check that Hawcx Authentication is properly initialized in your application.
 3. Verify that all required permissions are set in your AndroidManifest.xml.
-4. Review the logcat output for any HawcxFramework-related warnings or errors.
+4. Review the logcat output for any Hawcx Authentication-related warnings or errors.
 
 ## Common Issues and Solutions
 
-### Issue: HawcxFramework not initializing
-Solution: Make sure you're calling `HawcxFramework.init()` in your Application class's `onCreate()` method.
+### Issue: Hawcx Authentication not initializing
+Solution: Make sure you're calling `Hawcx Authentication.init()` in your Application class's `onCreate()` method.
 
 ### Issue: Biometric authentication not working
 Solution: Ensure the device has biometric hardware and that the user has enrolled biometrics.
@@ -22,7 +22,7 @@ Solution: Check your internet connection and verify that you're using the correc
 
 ## Error Codes
 
-Here's a comprehensive list of HawcxFramework error codes and their meanings:
+Here's a comprehensive list of Hawcx Authentication error codes and their meanings:
 
 | Error Code | Description | Solution |
 |------------|-------------|----------|

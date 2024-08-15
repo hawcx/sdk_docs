@@ -2,35 +2,35 @@
 
 ## General Questions
 
-1. **Q: What is HawcxFramework?**
-   A: HawcxFramework is a comprehensive security solution for Android applications, providing features like secure authentication, data encryption, and tamper detection.
+1. **Q: What is Hawcx Authentication?**
+   A: Hawcx Authentication is a comprehensive security solution for Android applications, providing features like secure authentication, data encryption, and tamper detection.
 
-2. **Q: Which Android versions are supported by HawcxFramework?**
-   A: HawcxFramework supports Android API level 21 (Android 5.0 Lollipop) and above.
+2. **Q: Which Android versions are supported by Hawcx Authentication?**
+   A: Hawcx Authentication supports Android API level 21 (Android 5.0 Lollipop) and above.
 
-3. **Q: Can I use HawcxFramework in my existing Android project?**
-   A: Yes, HawcxFramework can be easily integrated into existing Android projects. See our [Existing Project Integration Guide](android/existing-project.md) for details.
+3. **Q: Can I use Hawcx Authentication in my existing Android project?**
+   A: Yes, Hawcx Authentication can be easily integrated into existing Android projects. See our [Existing Project Integration Guide](android/existing-project.md) for details.
 
 ## Technical Questions
 
-4. **Q: How does HawcxFramework handle data encryption?**
-   A: HawcxFramework uses industry-standard AES-256 encryption for data at rest and TLS for data in transit.
+4. **Q: How does Hawcx Authentication handle data encryption?**
+   A: Hawcx Authentication uses industry-standard AES-256 encryption for data at rest and TLS for data in transit.
 
-5. **Q: Does HawcxFramework support biometric authentication?**
-   A: Yes, HawcxFramework provides built-in support for biometric authentication, including fingerprint and face recognition where available.
+5. **Q: Does Hawcx Authentication support biometric authentication?**
+   A: Yes, Hawcx Authentication provides built-in support for biometric authentication, including fingerprint and face recognition where available.
 
-6. **Q: Can I use HawcxFramework with other third-party libraries?**
-   A: Yes, HawcxFramework is designed to be compatible with most third-party Android libraries. However, always test for any conflicts.
+6. **Q: Can I use Hawcx Authentication with other third-party libraries?**
+   A: Yes, Hawcx Authentication is designed to be compatible with most third-party Android libraries. However, always test for any conflicts.
 
 ## Licensing and Support
 
-7. **Q: Is there a free trial available for HawcxFramework?**
+7. **Q: Is there a free trial available for Hawcx Authentication?**
    A: Yes, we offer a 30-day free trial. Contact our sales team for more information.
 
-8. **Q: How often is HawcxFramework updated?**
+8. **Q: How often is Hawcx Authentication updated?**
    A: We release updates quarterly, with additional security patches as needed.
 
-9. **Q: Is technical support available for HawcxFramework?**
+9. **Q: Is technical support available for Hawcx Authentication?**
    A: Yes, we provide technical support via email and our developer forum. Enterprise customers also have access to priority phone support.
 
 ## Troubleshooting

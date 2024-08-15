@@ -1,12 +1,12 @@
 <!-- # Demo Application
 
-Experience HawcxFramework in action through our demo application. This demo showcases the key features and security capabilities of HawcxFramework in a real-world scenario.
+Experience Hawcx Authentication in action through our demo application. This demo showcases the key features and security capabilities of Hawcx Authentication in a real-world scenario.
 
 <div class="grid-container">
   <div class="grid-item" onclick="showVideo()">
     <i style="font-size: 3rem; margin-top: 25px; opacity: 0.5" class="fa fa-play-circle"></i>
     <h2>Watch the Video</h2>
-    <p style="margin-top: -15px">See HawcxFramework in action</p>
+    <p style="margin-top: -15px">See Hawcx Authentication in action</p>
   </div>
 
   <div class="grid-item" onclick="window.open('https://github.com/hawcx/android_app', '_blank')">
@@ -113,7 +113,7 @@ window.onclick = function(event) {
 
 ## Features Demonstrated
 
-Our demo application showcases the following key features of HawcxFramework:
+Our demo application showcases the following key features of Hawcx Authentication:
 
 1. Secure User Authentication
 2. Biometric Login
@@ -121,6 +121,6 @@ Our demo application showcases the following key features of HawcxFramework:
 4. Secure API Communications
 5. Tamper Detection
 
-Explore the demo to see how HawcxFramework can enhance the security of your Android application. -->
+Explore the demo to see how Hawcx Authentication can enhance the security of your Android application. -->
 
 # Stay tuned! Coming soon!

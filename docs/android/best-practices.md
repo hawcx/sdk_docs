@@ -32,7 +32,7 @@ public void initiateBiometricLogin(Runnable onSuccess) {
 }
 ```
 
-## 3. Data Protection
+<!-- ## 3. Data Protection
 
 - **Encrypt All Sensitive Data**: Use Hawcx's encryption methods for all sensitive data before storing or transmitting.
 
@@ -41,26 +41,26 @@ import com.hawcx.util.EncryptedSharedPreferencesUtil;
 
 EncryptedSharedPreferencesUtil.setString(context, "key", senstiveData); 
 EncryptedSharedPreferencesUtil.setLong(context, "key", senstiveData); 
-```
+``` -->
 
 ## 4. Error Handling and Logging
 
-- **Implement Proper Error Handling**: Always catch and handle exceptions thrown by HawcxFramework methods.
+- **Implement Proper Error Handling**: Always catch and handle exceptions thrown by Hawcx Authentication methods.
 
 ```java
 try {
-    // HawcxFramework operation
+    // Hawcx Authentication operation
 } catch (HawcxException e) {
     Log.e("HawcxError", "Operation failed: " + e.getMessage());
     // Handle the error appropriately
 }
 ```
 
-- **Secure Logging**: Avoid logging sensitive information. Use HawcxFramework's secure logging features for debugging.
+- **Secure Logging**: Avoid logging sensitive information. Use Hawcx Authentication's secure logging features for debugging.
 
 ```java
 HawcxLogger.log(LogLevel.INFO, "User action completed", "UserAction");
 ```
 
 
-By following these best practices, you can ensure that you're using HawcxFramework effectively and maximizing the security of your Android application. Remember to review the [API documentation](api-reference.md) for detailed information on each feature and method mentioned here. 
+By following these best practices, you can ensure that you're using Hawcx Authentication effectively and maximizing the security of your Android application. Remember to review the [API documentation](api-reference.md) for detailed information on each feature and method mentioned here. 

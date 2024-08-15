@@ -1,1 +1,1 @@
-Implementing HawcxFramework in your Android application is a great step towards enhancing your app's security. We are working really hard on pushing a lot of features and building this page. Please stay tuned to get more updates
+Implementing Hawcx Authentication in your Android application is a great step towards enhancing your app's security. We are working really hard on pushing a lot of features and building this page. Please stay tuned to get more updates
