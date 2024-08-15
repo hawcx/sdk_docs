@@ -50,16 +50,10 @@ EncryptedSharedPreferencesUtil.setLong(context, "key", senstiveData);
 ```java
 try {
     // Hawcx Authentication operation
-} catch (HawcxException e) {
+} catch (Exception e) {
     Log.e("HawcxError", "Operation failed: " + e.getMessage());
     // Handle the error appropriately
 }
-```
-
-- **Secure Logging**: Avoid logging sensitive information. Use Hawcx Authentication's secure logging features for debugging.
-
-```java
-HawcxLogger.log(LogLevel.INFO, "User action completed", "UserAction");
 ```
 
 
