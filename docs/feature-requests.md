@@ -127,4 +127,4 @@ document.getElementById('featureRequestForm').addEventListener('submit', functio
 2. **Provide Context**: Explain why this feature would be useful and how it could be implemented.
 3. **One Feature per Request**: If you have multiple ideas, please submit them separately.
 
-We review all feature requests and greatly appreciate your input in making HawcxFramework even better!
+We review all feature requests and greatly appreciate your input in making Hawcx Authentication even better!

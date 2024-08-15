@@ -1,5 +1,5 @@
 # Feedback
-We value your feedback! Please use the form below to share your thoughts, report issues, or provide any other comments about HawcxFramework.
+We value your feedback! Please use the form below to share your thoughts, report issues, or provide any other comments about Hawcx Authentication.
 
 <form id="feedbackForm" action="https://api.hawcx.com/feedback" method="POST" enctype="multipart/form-data">
     <div class="form-group">
@@ -191,4 +191,4 @@ document.addEventListener('DOMContentLoaded', function() {
 2. **Include Examples**: If reporting an issue, include steps to reproduce it.
 3. **Suggest Improvements**: If possible, include suggestions for how we can address your feedback.
 
-We appreciate your time in helping us improve HawcxFramework!
+We appreciate your time in helping us improve Hawcx Authentication!
