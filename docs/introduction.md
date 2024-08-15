@@ -1,10 +1,10 @@
 # Introduction to Hawcx Authentication
 
-Hawcx Authentication is a state-of-the-art security solution designed to protect Android applications from a wide range of threats. As mobile applications increasingly handle sensitive user data, the need for robust security measures has never been more critical. Hawcx Authentication offers developers a comprehensive suite of tools to ensure their applications meet the highest security standards.
+
 
 ## How It Works
 
-Hawcx Authentication operates as a layer between your application and potential security threats. It provides a set of APIs and tools that you can easily integrate into your existing or new Android projects. By leveraging Hawcx Authentication, you can implement complex security features without needing to be a security expert.
+Hawcx Authentication is a passwordless authenct operates as a layer between your application and potential security threats. It provides a set of APIs and tools that you can easily integrate into your existing or new Android projects. By leveraging Hawcx Authentication, you can implement complex security features without needing to be a security expert.
 
 <br>
 

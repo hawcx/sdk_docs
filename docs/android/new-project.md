@@ -16,8 +16,8 @@ This guide will walk you through the process of creating a new Android project w
    - Set your application name, package name, and minimum SDK (26 or higher)
    - Click "Finish" to create the project
 
-2. **Add HawcxAuth AAR**
-   - [Download](https://github.com/hawcx/authenticator/releases) the HawcxAuth AAR file.
+2. **Add Hawcx AAR**
+   - [Download](https://github.com/hawcx/authenticator/releases/download/app/hawcx-1.0.aar) the Hawcx AAR file.
    - Create a new folder named `libs` in your project's `app` directory
    - Copy the downloaded AAR file into the `libs` folder
    - Please make sure that names match with the names provided in the document.
@@ -28,13 +28,13 @@ This guide will walk you through the process of creating a new Android project w
 
      ```gradle
      dependencies {
-         implementation files('libs/HawcxAuth.aar')
+         implementation files('libs/hawcx.aar')
          // Other dependencies...
      }
      ```
    - Sync your project with Gradle files
 
-4. **Initialize HawcxAuth**
+4. **Initialize Hawcx Authentication**
    - Create a new Application class:
 
      ```java
