@@ -132,4 +132,3 @@ This guide will walk you through the process of integrating Hawcx into your Reac
 - Use async/await for cleaner code when calling native methods.
 - Implement proper error handling and user feedback in your React Native UI.
 
-For more advanced features and detailed API usage, refer to our [complete API reference](api-reference.md).
