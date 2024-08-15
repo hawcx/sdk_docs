@@ -93,7 +93,7 @@ public void showError(String errorMessage) {
 ## Next Steps
 
 - Explore the [Hawcx API Documentation](api-docs.md) for a complete list of available features and methods.
-- Implement [Biometric Authentication](biometric-auth.md) for enhanced security.
+- Implement [Biometric Authentication](best-practices.md#2-authentication) for enhanced security.
 - Learn about [Best Practices](best-practices.md) when using Hawcx.
 
 If you encounter any issues during integration, please refer to our [Troubleshooting Guide](../troubleshoot.md) or contact our support team.
