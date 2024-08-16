@@ -34,35 +34,53 @@ This guide will walk you through the process of integrating Hawcx into your Reac
    import com.facebook.react.bridge.ReactContextBaseJavaModule;
    import com.facebook.react.bridge.ReactMethod;
    import com.facebook.react.bridge.Promise;
-   import com.hawcx.framework.HawcxAuth;
-   import com.hawcx.framework.auth.HawcxAuth;
+   import com.hawcx.HawcxInitializer;
+   import com.hawcx.auth.SignIn;
 
-   public class HawcxModule extends ReactContextBaseJavaModule {
-       public HawcxModule(ReactApplicationContext reactContext) {
-           super(reactContext);
-           HawcxAuth.init(reactContext);
-       }
+    public class HawcxModule extends ReactContextBaseJavaModule implements SignIn.SignInCallback {
+        private ReactApplicationContext reactContext;
+        private Promise currentPromise;
 
-       @Override
-       public String getName() {
-           return "HawcxModule";
-       }
+        public HawcxModule(ReactApplicationContext reactContext) {
+            super(reactContext);
+            HawcxInitializer.getInstance().init(reactContext, "YOUR_API_KEY_HERE");
+        }
 
-       @ReactMethod
-       public void login(String username, String password, Promise promise) {
-           HawcxAuth.login(username, password, new HawcxAuth.AuthCallback() {
-               @Override
-               public void onSuccess() {
-                   promise.resolve("Login successful");
-               }
+        @Override
+        public String getName() {
+            return "HawcxModule";
+        }
 
-               @Override
-               public void onFailure(String errorMessage) {
-                   promise.reject("LOGIN_ERROR", errorMessage);
-               }
-           });
-       }
 
+        @ReactMethod
+        public void checkLastUser(Promise promise) {
+            SignIn loginAct = HawcxInitializer.getInstance().getSignIn();
+            loginAct.checkLastUser(reactContext);
+            promise.resolve(null);
+        }
+
+        @ReactMethod
+            public void login(String email, Promise promise) {
+                currentPromise = promise;
+                SignIn loginAct = HawcxInitializer.getInstance().getSignIn();
+                loginAct.signIn(email, this);
+            }
+
+            @Override
+            public void onSuccessfulLogin(String loggedInEmail) {
+                if (currentPromise != null) {
+                    currentPromise.resolve(loggedInEmail);
+                    currentPromise = null;
+                }
+            }
+
+            @Override
+            public void showError(String errorMessage) {
+                if (currentPromise != null) {
+                    currentPromise.reject("LOGIN_ERROR", errorMessage);
+                    currentPromise = null;
+                }
+            }
        // Add other methods for different HawcxAuth features
    }
    ```
@@ -116,14 +134,29 @@ This guide will walk you through the process of integrating Hawcx into your Reac
    Now you can use HawcxAuth in your React Native components:
 
    ```javascript
-   import { NativeModules } from 'react-native';
+    import { NativeModules } from 'react-native';
 
-   const { HawcxModule } = NativeModules;
+    const { HawcxModule } = NativeModules;
 
-   // Example usage
-   HawcxModule.login('username', 'password')
-     .then(result => console.log(result))
-     .catch(error => console.error(error));
+    // Example usage
+
+    // Check last logged in user
+    HawcxModule.checkLastUser()
+    .then(() => {
+        console.log('Checked last user');
+    })
+    .catch((error) => {
+        console.error(error);
+    });
+
+    // Login
+    HawcxModule.login('user@example.com')
+    .then((loggedInEmail) => {
+        console.log('Login successful:', loggedInEmail);
+    })
+    .catch((error) => {
+        console.error('Login failed:', error);
+    });
    ```
 
 ## Best Practices
@@ -132,4 +165,3 @@ This guide will walk you through the process of integrating Hawcx into your Reac
 - Use async/await for cleaner code when calling native methods.
 - Implement proper error handling and user feedback in your React Native UI.
 
-For more advanced features and detailed API usage, refer to our [complete API reference](api-reference.md).

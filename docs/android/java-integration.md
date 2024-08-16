@@ -50,6 +50,7 @@ loginAct.checkLastUser(this);
 
 loginAct.signIn(email, this);
 
+// implement the class with SignIn.SignInCallback
 @Override
 public void onSuccessfulLogin(String loggedInEmail) {
     // Handle successful login
