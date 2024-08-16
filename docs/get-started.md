@@ -85,7 +85,7 @@ After integrating Hawcx, explore our documentation to learn how to:
 For platform-specific integration guides, check out:
 
 - [Java Integration Guide](android/java-integration.md)
-- [React Native Integration Guide](android/react-native-integration.md)
+- [React Native Integration Guide](android/react-integration.md)
 - [Flutter Integration Guide](android/flutter-integration.md)
 
 If you encounter any issues during integration, refer to our [Troubleshooting Guide](troubleshoot.md) or contact our support team.

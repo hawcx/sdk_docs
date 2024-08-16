@@ -11,7 +11,7 @@ This guide will walk you through the process of integrating Hawcx into your Reac
 
 1. **Add Hawcx to your Android project**
 
-   In your React Native project, navigate to the `android/app` directory and create a `libs` folder if it doesn't exist. Place the HawcxAuth AAR file in this folder.
+   In your React Native project, navigate to the `android/app` directory and create a `libs` folder if it doesn't exist. Place the Hawcx AAR file in this folder.
 
 2. **Update build.gradle**
 
@@ -19,7 +19,7 @@ This guide will walk you through the process of integrating Hawcx into your Reac
 
    ```gradle
    dependencies {
-       implementation files('libs/HawcxAuth.aar')
+       implementation files('libs/hawcx.aar')
    }
    ```
 

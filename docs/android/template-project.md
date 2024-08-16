@@ -13,7 +13,8 @@ Get up and running quickly with our pre-configured Hawcx template project. This 
    - Open a terminal or command prompt
    - Run the following command:
      ```
-     git clone hhttps://github.com/hawcx/authenticator.git
+     git clone https://github.com/hawcx/authenticator.git
+
      ```
 
 2. **Open the Project in Android Studio**
@@ -32,14 +33,13 @@ Get up and running quickly with our pre-configured Hawcx template project. This 
    - Open `app/src/main/java/com/hawcx/template/MyApplication.java`
    - Replace the placeholder API key with your actual Hawcx API key:
      ```java
-     HawcxAuth.init(this, "YOUR_API_KEY_HERE");
+     HawcxInitializer.getInstance().init(this, "YOUR_API_KEY_HERE");
      ```
 
 5. **Customize the Template**
    - The template includes basic implementations of:
      - User registration (`SignupActivity.java`)
      - User login (`LoginActivity.java`)
-     - Secure data storage (`SecureStorageManager.java`)
    - Modify these files and add your own business logic as needed
 
 6. **Run the Project**
@@ -57,10 +57,10 @@ Get up and running quickly with our pre-configured Hawcx template project. This 
 - `app/src/main/res/layout/`
   - XML layout files for activities
 
-## Next Steps
+<!-- ## Next Steps
 
 - Please visit the [Java Integration Guide](java-integration.md) to understand the template code better and implement different functions. 
 - Explore additional [Hawcx Features](features.md) to enhance your app's security
 - Check our [Best Practices](best-practices.md) guide for optimal usage of Hawcx
 
-Congratulations! You now have a fully functional Android project with HawcxAuth integration, ready for you to build upon.
+Congratulations! You now have a fully functional Android project with HawcxAuth integration, ready for you to build upon. -->

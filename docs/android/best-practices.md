@@ -32,7 +32,7 @@ public void initiateBiometricLogin(Runnable onSuccess) {
 }
 ```
 
-## 3. Data Protection
+<!-- ## 3. Data Protection
 
 - **Encrypt All Sensitive Data**: Use Hawcx's encryption methods for all sensitive data before storing or transmitting.
 
@@ -41,7 +41,7 @@ import com.hawcx.util.EncryptedSharedPreferencesUtil;
 
 EncryptedSharedPreferencesUtil.setString(context, "key", senstiveData); 
 EncryptedSharedPreferencesUtil.setLong(context, "key", senstiveData); 
-```
+``` -->
 
 ## 4. Error Handling and Logging
 

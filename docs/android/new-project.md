@@ -19,7 +19,7 @@ This guide will walk you through the process of creating a new Android project w
 
 ### 2. Add HawcxAuth AAR
 
-- [Download](https://github.com/hawcx/authenticator/releases/latest) the HawcxAuth AAR file.
+- [Download](https://github.com/hawcx/authenticator/releases/latest/download/hawcx-1.0.aar) the HawcxAuth AAR file.
 - Create a new folder named `libs` in your project's `app` directory
 - Copy the downloaded AAR file into the `libs` folder
 - Please make sure that names match with the names provided in the document.
@@ -70,15 +70,17 @@ This guide will walk you through the process of creating a new Android project w
 - Now you can start using Hawcx features in your activities and fragments. For example:
 
   ```java
-  import com.hawcx.auth.SignIn; import com.hawcx.HawcxInitializer;
+    import com.hawcx.auth.SignIn;
+    import com.hawcx.HawcxInitializer;
 
-  public class MainActivity extends AppCompatActivity implements
-  SignIn.SignInCallback { @Override protected void onCreate(Bundle
-  savedInstanceState) { super.onCreate(savedInstanceState);
-  setContentView(R.layout.activity_main);
+    public class MainActivity extends AppCompatActivity implements SignIn.SignInCallback {
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_main);
 
-             // Example: Implement secure login
-             // User Login
+            // Example: Implement secure login
+            // User Login
             SignIn loginAct = HawcxInitializer.getInstance().getSignIn();
 
             // Check last logged in user and signal biometric auth if applicable
@@ -111,8 +113,10 @@ This guide will walk you through the process of creating a new Android project w
             }
          }
          
+
   ```
 
+<!-- 
 ## Next Steps
 
 - Explore our [Java Integration Guide](java-integration.md) for more detailed
@@ -120,4 +124,4 @@ This guide will walk you through the process of creating a new Android project w
 - Learn about [Best Practices](best-practices.md) when using Hawcx
 - Check out our [Sample Projects](sample-projects.md) for inspiration
 
-Congratulations! You've successfully created a new Android project with Hawcx integration.
+Congratulations! You've successfully created a new Android project with Hawcx integration. -->

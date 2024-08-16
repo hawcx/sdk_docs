@@ -13,9 +13,9 @@ Secure your mobile applications with HawcxAuth - the next-gen passwordless platf
 
 - [Get Started with Android](get-started.md)
 - [Integrate in Java Application](android/java-integration.md)
-- [Integrate in React Native Application](android/react-native-integration.md)
+- [Integrate in React Native Application](android/react-integration.md)
 - [Integrate in Flutter Application](android/flutter-integration.md)
-- [Next Steps](android/next-steps.md)
+<!-- - [Next Steps](android/next-steps.md) -->
 
 ## Support
 
