@@ -13,7 +13,8 @@ Get up and running quickly with our pre-configured Hawcx template project. This 
    - Open a terminal or command prompt
    - Run the following command:
      ```
-     git clone https://github.com/hawcx/authenticator
+     git clone https://github.com/hawcx/authenticator.git
+
      ```
 
 2. **Open the Project in Android Studio**

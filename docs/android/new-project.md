@@ -9,58 +9,65 @@ This guide will walk you through the process of creating a new Android project w
 
 ## Steps
 
-1. **Create a New Android Project**
-   - Open Android Studio
-   - Click on "File" > "New" > "New Project"
-   - Choose "Empty Activity" and click "Next"
-   - Set your application name, package name, and minimum SDK (26 or higher)
-   - Click "Finish" to create the project
+### 1. Create a New Android Project
 
-2. **Add Hawcx AAR**
-   - [Download](https://github.com/hawcx/authenticator/releases/download/app/hawcx-1.0.aar) the Hawcx AAR file.
-   - Create a new folder named `libs` in your project's `app` directory
-   - Copy the downloaded AAR file into the `libs` folder
-   - Please make sure that names match with the names provided in the document.
+- Open Android Studio
+- Click on "File" > "New" > "New Project"
+- Choose "Empty Activity" and click "Next"
+- Set your application name, package name, and minimum SDK (26 or higher)
+- Click "Finish" to create the project
 
-3. **Update Gradle Configuration**
-   - Open your app-level `build.gradle` file
-   - Add the following to the `dependencies` section:
+### 2. Add HawcxAuth AAR
 
-     ```gradle
-     dependencies {
-         implementation files('libs/hawcx.aar')
-         // Other dependencies...
+- [Download](https://github.com/hawcx/authenticator/releases/latest/download/hawcx-1.0.aar) the HawcxAuth AAR file.
+- Create a new folder named `libs` in your project's `app` directory
+- Copy the downloaded AAR file into the `libs` folder
+- Please make sure that names match with the names provided in the document.
+
+### 3. Update Gradle Configuration
+
+- Open your app-level `build.gradle` file
+- Add the following to the `dependencies` section:
+
+  ```gradle
+  dependencies {
+      implementation files('libs/HawcxAuth.aar')
+      // Other dependencies...
+  }
+  ```
+
+- Sync your project with Gradle files
+
+### 4. Initialize HawcxAuth
+
+- Create a new Application class:
+
+  ```java
+     import android.app.Application;
+     import com.hawcx.HawcxInitializer;
+
+     public class MyApplication extends Application {
+         @Override
+         public void onCreate() {
+             super.onCreate();
+             HawcxInitializer.getInstance().init(this, "YOUR_API_KEY_HERE");
+         }
      }
-     ```
-   - Sync your project with Gradle files
+  ```
 
-4. **Initialize Hawcx Authentication**
-   - Create a new Application class:
+- Register the Application class in your `AndroidManifest.xml`:
 
-     ```java
-        import android.app.Application;
-        import com.hawcx.HawcxInitializer;
+  ```xml
+  <application
+      android:name=".MyApplication"
+      ...>
+      <!-- Your activities and other components -->
+  </application>
+  ```
 
-        public class MyApplication extends Application {
-            @Override
-            public void onCreate() {
-                super.onCreate();
-                HawcxInitializer.getInstance().init(this, "YOUR_API_KEY_HERE");
-            }
-        }
-     ```
-   - Register the Application class in your `AndroidManifest.xml`:
+### 5. Implement Hawcx Features
 
-     ```xml
-     <application
-         android:name=".MyApplication"
-         ...>
-         <!-- Your activities and other components -->
-     </application>
-     ```
-
-5. **Implement Hawcx Features**
-   - Now you can start using Hawcx features in your activities and fragments. 
+- Now you can start using Hawcx features in your activities and fragments. For example:
 
   ```java
     import com.hawcx.auth.SignIn;
@@ -82,6 +89,7 @@ This guide will walk you through the process of creating a new Android project w
             loginAct.signIn(email, this);
 
             }
+
             @Override
             public void onSuccessfulLogin(String loggedInEmail) {
                 // Handle successful login
@@ -95,22 +103,24 @@ This guide will walk you through the process of creating a new Android project w
             // If lastuser found
             @Override
             public void initiateBiometricLogin(Runnable onSuccess) {
-                // Handle Biometric Auth 
+                // Handle Biometric Auth
             }
 
-            // If no last user is found 
+            // If no last user is found
             @Override
-                public void showEmailSignInScreen() {
-                    // Handle the Email screen
-                }
-        }
-    }
+            public void showEmailSignInScreen() {
+                // Handle the Email screen
+            }
+         }
+         
+
   ```
 
 <!-- 
 ## Next Steps
 
-- Explore our [Java Integration Guide](java-integration.md) for more detailed usage of Hawcx
+- Explore our [Java Integration Guide](java-integration.md) for more detailed
+  usage of Hawcx
 - Learn about [Best Practices](best-practices.md) when using Hawcx
 - Check out our [Sample Projects](sample-projects.md) for inspiration
 

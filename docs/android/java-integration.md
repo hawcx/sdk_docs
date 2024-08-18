@@ -114,6 +114,6 @@ public class LoginActivity extends AppCompatActivity implements SignIn.SignInCal
 
 ## Conclusion
 
-This guide covers the basic usage of Hawcx in a Java Android application. For more advanced features and detailed API documentation, please refer to our [complete API reference](api-reference.md).
+This guide covers the basic usage of Hawcx in a Java Android application.
 
 If you encounter any issues or have questions, please check our [FAQ](../faqs.md) or contact our support team.

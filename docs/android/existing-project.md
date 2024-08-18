@@ -10,7 +10,8 @@ This guide will walk you through the process of adding Hawcx to your existing An
 
 ## Step 1: Add the Hawcx AAR
 
-1. [Download](https://github.com/hawcx/authenticator/releases/download/app/hawcx-1.0.aar) the Hawcx AAR file
+
+1. [Download](https://github.com/hawcx/authenticator/releases/latest/download/hawcx-1.0.aar) the Hawcx AAR file
 
 2. In your Android project, create a new folder named `libs` in the `app` directory if it doesn't already exist.
 
@@ -93,7 +94,7 @@ public void showError(String errorMessage) {
 ## Next Steps
 
 - Explore the [Hawcx API Documentation](api-docs.md) for a complete list of available features and methods.
-- Implement [Biometric Authentication](biometric-auth.md) for enhanced security.
+- Implement [Biometric Authentication](best-practices.md#2-authentication) for enhanced security.
 - Learn about [Best Practices](best-practices.md) when using Hawcx.
 
 If you encounter any issues during integration, please refer to our [Troubleshooting Guide](../troubleshoot.md) or contact our support team.

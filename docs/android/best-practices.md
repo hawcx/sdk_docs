@@ -50,17 +50,11 @@ EncryptedSharedPreferencesUtil.setLong(context, "key", senstiveData);
 ```java
 try {
     // Hawcx Authentication operation
-} catch (HawcxException e) {
+} catch (Exception e) {
     Log.e("HawcxError", "Operation failed: " + e.getMessage());
     // Handle the error appropriately
 }
 ```
 
-- **Secure Logging**: Avoid logging sensitive information. Use Hawcx Authentication's secure logging features for debugging.
 
-```java
-HawcxLogger.log(LogLevel.INFO, "User action completed", "UserAction");
-```
-
-
-By following these best practices, you can ensure that you're using Hawcx Authentication effectively and maximizing the security of your Android application. Remember to review the [API documentation](api-reference.md) for detailed information on each feature and method mentioned here. 
+By following these best practices, you can ensure that you're using Hawcx Authentication effectively and maximizing the security of your Android application. 
