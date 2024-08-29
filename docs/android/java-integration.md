@@ -27,20 +27,71 @@ public class MyApplication extends Application {
 
 Don't forget to register this Application class in your AndroidManifest.xml.
 
+```java
+<manifest>
+    // Use permission
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+    // Config your application
+    android:name=".MyApplication">
+    // Set up your application
+</manifest>
+```
+
+## User Registration
+
+```java
+
+import com.hawcx.auth.SignUp;
+import com.hawcx.HawcxInitializer;
+
+// User Registration
+SignUp signUpManager = HawcxInitializer.getInstance().getSignUp();
+
+// Signup button clicked
+signUpManager.signUp("username", this);
+
+// Verify OTP button clicked
+signUpManager.handleVerifyOTP(email, otp, this);
+
+// implement the class with SignUp.SignUpCallback
+@Override
+public void showError(AuthErrorHandler.SignUpErrorCode signUpErrorCode, String errorMessage) {
+    // Handle signup failure
+    switch(signUpErrorCode) {
+        case NETWORK_ERROR:
+            break;
+        case USER_ALREADY_EXISTS:
+            break;
+        case GENERATE_OTP_FAILED:
+            break;
+        case VERIFY_OTP_FAILED:
+            break;
+        default:
+            break;
+    }
+}
+
+@Override
+public void onGenerateOTPSuccess() {
+    // Handle successful OTP generation
+}
+
+@Override
+public void onSuccessfulSignup() {
+    // Handle successful signup
+}
+
+```
+
 ## User Authentication
 
 HawcxInitializer provides secure user authentication methods:
 
 ```java
-import com.hawcx.auth.SignUp;
+
 import com.hawcx.auth.SignIn;
 import com.hawcx.HawcxInitializer;
-
-// User Registration
-SingUp registerAct = HawcxInitializer.getInstance().getSignUp();
-
-registerAct.signUp("username", this::onSuccessHandler, this::onFailureHandler);
-
 
 // User Login
 SignIn loginAct = HawcxInitializer.getInstance().getSignIn();
@@ -48,6 +99,7 @@ SignIn loginAct = HawcxInitializer.getInstance().getSignIn();
 // Check last logged in user and signal biometric auth if applicable
 loginAct.checkLastUser(this);
 
+// Login button clicked
 loginAct.signIn(email, this);
 
 // implement the class with SignIn.SignInCallback
@@ -57,8 +109,18 @@ public void onSuccessfulLogin(String loggedInEmail) {
 }
 
 @Override
-public void showError(String errorMessage) {
+public void showError(AuthErrorHandler.SignInErrorCode signInErrorCode, String errorMessage) {
     // Handle login failure
+    switch(signInErrorCode) {
+        case NETWORK_ERROR:
+            break;
+        case USER_NOT_FOUND:
+            break;
+        case RESET_DEVICE:
+            break;
+        default:
+            break;
+    }
 }
 
 ```
@@ -88,10 +150,10 @@ public class LoginActivity extends AppCompatActivity implements SignIn.SignInCal
 // If lastuser found
 @Override
     public void initiateBiometricLogin(Runnable onSuccess) {
-        // Handle Biometric Auth 
+        // Handle Biometric Auth
     }
 
-// If no last user is found 
+// If no last user is found
 @Override
     public void showEmailSignInScreen() {
         // Handle the Email screen
@@ -99,7 +161,6 @@ public class LoginActivity extends AppCompatActivity implements SignIn.SignInCal
 }
 
 ```
-
 
 ## Best Practices
 
