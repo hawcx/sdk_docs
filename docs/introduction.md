@@ -1,10 +1,8 @@
 # Introduction to Hawcx Authentication
 
-
-
 ## How It Works
 
-Hawcx Authentication is a passwordless authenct operates as a layer between your application and potential security threats. It provides a set of APIs and tools that you can easily integrate into your existing or new Android projects. By leveraging Hawcx Authentication, you can implement complex security features without needing to be a security expert.
+Hawcx Authentication is a passwordless authentication operates as a layer between your application and potential security threats. It provides a set of APIs and tools that you can easily integrate into your existing or new Android projects. By leveraging Hawcx Authentication, you can implement complex security features without needing to be a security expert.
 
 <br>
 
