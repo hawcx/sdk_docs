@@ -1,3 +1,16 @@
+<!-- End Cloudflare Web Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B89K3ZN1LX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B89K3ZN1LX');
+</script>
+
+
+
 # 2. How does Hawcx Work
 
 Hawcx Authentication employs a multi-layered approach to security, combining several advanced techniques to protect user data and prevent unauthorized access.

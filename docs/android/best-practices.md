@@ -1,3 +1,14 @@
+<!-- End Cloudflare Web Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B89K3ZN1LX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B89K3ZN1LX');
+</script>
+
 # Best Practices
 
 Implementing Hawcx in your Android application is like upgrading from a tricycle to a supercharged motorcycle for security. We’re working hard to add features that will make your life easier and your app more secure. Keep an eye out for updates—you won’t want to miss them!

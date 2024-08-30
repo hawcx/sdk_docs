@@ -1,3 +1,14 @@
+<!-- End Cloudflare Web Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B89K3ZN1LX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B89K3ZN1LX');
+</script>
+
 # Java Integration Guide for Hawcx
 
 This guide provides detailed instructions on how to use Hawcx in your Java Android application. We'll cover key features and best practices to help you make the most of Hawcx's security capabilities.

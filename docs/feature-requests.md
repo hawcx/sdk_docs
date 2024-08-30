@@ -1,3 +1,15 @@
+<!-- End Cloudflare Web Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B89K3ZN1LX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B89K3ZN1LX');
+</script>
+
+
 # Feature Requests
 
 We value your input! If you have an idea for a new feature or an improvement to an existing one, please let us know by submitting a feature request.

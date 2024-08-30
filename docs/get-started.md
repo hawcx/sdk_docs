@@ -1,3 +1,16 @@
+<!-- End Cloudflare Web Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B89K3ZN1LX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B89K3ZN1LX');
+</script>
+
+
+
 # Get Started with Hawcx
 
 Ready to enhance your app's security with Hawcx? Choose the integration method that best suits your project:

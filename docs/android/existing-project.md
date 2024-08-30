@@ -1,3 +1,14 @@
+<!-- End Cloudflare Web Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B89K3ZN1LX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B89K3ZN1LX');
+</script>
+
 # Integrating Hawcx into an Existing Project
 
 This guide will walk you through the process of adding Hawcx to your existing Android project. By following these steps, you'll be able to enhance your app's security features quickly and efficiently.

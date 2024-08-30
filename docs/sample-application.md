@@ -1,3 +1,15 @@
+<!-- End Cloudflare Web Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B89K3ZN1LX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B89K3ZN1LX');
+</script>
+
+
 # Sample Application
 
 Experience the power of Hawcx Authentication firsthand with our sample application. This section guides you through two options: installing a pre-built APK on your Android device and setting up the sample Java application in Android Studio for a more in-depth exploration.

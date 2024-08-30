@@ -1,3 +1,15 @@
+<!-- End Cloudflare Web Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B89K3ZN1LX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B89K3ZN1LX');
+</script>
+
+
 # Starting from a Template Project
 
 Get up and running quickly with our pre-configured Hawcx template project. This approach is perfect for developers who want to start with a solid foundation and best practices already in place.

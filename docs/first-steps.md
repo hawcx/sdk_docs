@@ -1,3 +1,15 @@
+<!-- End Cloudflare Web Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B89K3ZN1LX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B89K3ZN1LX');
+</script>
+
+
 # First Steps with Hawcx
 
 Welcome to the First Steps guide for Hawcx. This comprehensive guide will provide you with a detailed overview of how to integrate and use Hawcx in your Android application. We'll cover key concepts, components, and the integration process to help you get started with implementing robust security measures in your app.
