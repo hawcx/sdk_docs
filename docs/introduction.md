@@ -16,7 +16,7 @@
 
 ## How It Works
 
-Hawcx Authentication is a passwordless authenct operates as a layer between your application and potential security threats. It provides a set of APIs and tools that you can easily integrate into your existing or new Android projects. By leveraging Hawcx Authentication, you can implement complex security features without needing to be a security expert.
+Hawcx offers a self serve passwordless authentication platform that allows you to add an authentication interface to your mobile applications and websites in minutes. The platform provides a range of APIs and tools, along with developers friendly documentation f, making it easy to integrate into your existing or new mobile applications. Our first release comes with support for Android Applications usind Java and React native and learn more on what is coming please join [our slack channel] (https://join.slack.com/t/hawcx-dev/shared_invite/zt-2o1no0mer-9LX7rnzBkE3MAtLoi63gRw) and/or follow this page. 
 
 <br>
 
