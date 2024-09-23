@@ -58,7 +58,7 @@ Here's a comprehensive list of Hawcx Authentication error codes and their meanin
 If you encounter an issue not covered in this guide:
 
 1. Gather relevant information (error messages, steps to reproduce, device info).
-2. Check if the issue is already reported in our [GitHub Issues](https://github.com/hawcx/hawcxframework/issues).
+2. Check if the issue is already reported in our [GitHub Issues](https://github.com/hawcx/authenticator/issues).
 3. If not, create a new issue with a detailed description of the problem.
 
 For urgent issues or security vulnerabilities, please contact our support team directly at support@hawcx.com.

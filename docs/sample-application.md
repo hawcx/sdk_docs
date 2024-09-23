@@ -19,7 +19,7 @@ Experience the power of Hawcx Authentication firsthand with our sample applicati
 To quickly see Hawcx Authentication in action, you can download and install our pre-built APK on your Android device.
 
 1. On your Android device, click the following link to download the APK:
-   [Download Hawcx Demo APK](https://github.com/hawcx/android_app/releases/download/0.0.3/hawcx-demo.apk)
+   [Download Hawcx Demo APK](https://github.com/hawcx/authenticator/releases/latest/download/hawcx.apk)
 
 2. Once the download is complete, tap on the downloaded file to begin the installation process.
 
@@ -38,7 +38,7 @@ For developers who want to explore the code and run the sample application in An
 2. Open a terminal or command prompt and run the following command to clone the repository: 
 
 ``` 
-git clone https://github.com/hawcx/android_app.git
+git clone https://github.com/hawcx/authenticator.git
 ```
 3. Launch Android Studio.
 
@@ -67,4 +67,4 @@ The sample application demonstrates key features of Hawcx Authentication, includ
 
 Feel free to explore the application's functionality and examine the code to see how Hawcx Authentication is integrated and utilized.
 
-For any issues or questions about the sample application, please refer to our [GitHub repository](https://github.com/hawcx/android_app) or contact our support team.
+For any issues or questions about the sample application, please refer to our [GitHub repository](https://github.com/hawcx/authenticator) or contact our support team.

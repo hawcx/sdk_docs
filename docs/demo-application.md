@@ -26,7 +26,7 @@ Experience Hawcx Authentication in action through our demo application. This dem
     <p style="margin-top: -15px">Explore the demo app source</p>
   </div>
 
-  <div class="grid-item" onclick="window.open('https://github.com/hawcx/authenticator/releases/download/app/hawcx-authenticator.apk', '_blank')">
+  <div class="grid-item" onclick="window.open('https://github.com/hawcx/authenticator/releases/latest/download/hawcx.apk', '_blank')">
     <i style="font-size: 3rem; margin-top: 25px; opacity: 0.5" class="fa fa-download"></i>
     <h2>Download the App</h2>
     <p style="margin-top: -15px">Try the demo on your device</p>
