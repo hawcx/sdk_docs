@@ -1,0 +1,109 @@
+/* General Styling */
+body {
+  font-family: 'Lato', sans-serif;
+  color: #333; /* Dark grey for readability */
+  background-color: #f5f5f5; /* Light grey background */
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif; /* Modern font for headers */
+  font-weight: 1000;
+  color: #222; /* Slightly darker text for headers */
+  margin-bottom: 0.5em;
+}
+
+/* Links */
+a {
+  color: #007bff; /* Bright blue for links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #0056b3; /* Darker blue on hover */
+}
+
+/* Navigation */
+nav {
+  /* background-color: #f0f0f0;  */
+  /* color: #333;  */
+  /* border-bottom: 1px solid #ddd;  */
+}
+
+nav a {
+  color: #007bff; /* Blue color for links to match your logo */
+}
+
+.nav-item {
+  padding: 15px 20px;
+  display: inline-block;
+  color: #333; /* Dark grey text for nav items */
+}
+
+.nav-item:hover {
+  background-color: #e0e0e0; /* Slightly darker grey on hover */
+  color: #007bff; /* Blue text on hover */
+}
+
+/* Navigation Separator */
+.nav-separator {
+  height: 4px;
+  background-color: rgba(0, 0, 0, 0.1); /* Subtle black separator */
+  margin: 10px 0; /* Margin top and bottom for spacing */
+}
+
+
+/* Code Blocks */
+pre {
+  background-color: #2e2e2e; /* Dark background for code blocks */
+  color: #f5f5f5; /* Light text */
+  padding: 15px;
+  border-radius: 3px;
+  border: 1px solid #444444; /* Thinner border */
+  position: relative; /* Ensure the copy button is positioned correctly */
+}
+
+/* Code Inline */
+code {
+  background-color: #e0e0e0; /* Light grey background for inline code */
+  color: #d63384; /* Bright color for code text */
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+/* Copy Code Button */
+button.copy-code-button {
+  background-color: #444444; /* Background color for the button */
+  color: #f5f5f5; /* Text color */
+  border: none; /* Remove default border */
+  padding: 5px;
+  border-radius: 3px;
+  position: absolute; /* Position the button within the code block */
+  top: 10px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
+  cursor: pointer; /* Pointer cursor for the button */
+  opacity: 0.8; /* Slight transparency */
+}
+
+button.copy-code-button:hover {
+  opacity: 1; /* Fully opaque on hover */
+}
+
+/* Ensuring Copy Button is Visible in Dark Code Blocks */
+pre button.copy-code-button {
+  color: #f5f5f5; /* Light text for dark background */
+  background-color: #333333; /* Slightly lighter background */
+}
+
+pre button.copy-code-button:hover {
+  background-color: #555555; /* Highlight on hover */
+}
+
+.md-header img {
+  transform: scale(1.5);
+}
+
