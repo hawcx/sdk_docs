@@ -45,7 +45,7 @@ This guide will walk you through the process of integrating Hawcx into your Reac
     }
    ```
 
-   Now in ``, add the minSdkVersion as 26:
+   Now in `android\build.gradle`, add the minSdkVersion as 26:
    (Hawcx works with SDK virsion 26 and above)
 
    ```gradle
@@ -54,7 +54,7 @@ This guide will walk you through the process of integrating Hawcx into your Reac
 
 3. **Create a Native Module** 
 
-   Create a new Java file named `HawcxModule.kt` in `android\app\src\main\java\com\hawcxapp\`:
+   Create a new Kotlin file named `HawcxModule.kt` in `android\app\src\main\java\com\hawcxapp\`:
 
    ```java
     package com.yourproject

@@ -42,6 +42,7 @@ nav:
     - Start from Template: android/template-project.md
     - Java Integration: android/java-integration.md
     - React Native Integration: android/react-integration.md
+    - Flutter Integration: android/flutter-integration.md
     # - Best Practices: android/best-practices.md
     # - Next Steps: android/next-steps.md
   - FAQs: faqs.md
