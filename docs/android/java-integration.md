@@ -17,7 +17,8 @@ This guide provides detailed instructions on how to use Hawcx in your Java Andro
 1. [Initialization](#initialization)
 2. [User Authentication](#user-authentication)
 3. [Biometric Authentication](#biometric-authentication)
-
+4. [Best Practices](#best-practices)
+5. [Conclusion](#conclusion)
 ## Initialization
 
 Before using any Hawcx features, you need to initialize it in your Application class:
