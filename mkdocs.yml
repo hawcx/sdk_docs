@@ -3,6 +3,7 @@ site_url: https://hawcx.github.io/
 
 theme:
   name: material
+  custom_dir: overrides
   features:
     - navigation.sections
     - toc.integrate
