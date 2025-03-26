@@ -1,5 +1,4 @@
-<!-- End Cloudflare Web Analytics -->
-
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-B89K3ZN1LX"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
