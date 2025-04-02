@@ -37,10 +37,13 @@ The `HawcxInitializer` class is a singleton responsible for initializing the SDK
 
 - **`public static HawcxInitializer getInstance()`**  
   Returns the singleton instance of the initializer.
-
 - **`public void init(@NonNull Context context, @NonNull String apiKey)`**  
   Initializes the SDK with the application context and API key.  
   - *Throws a RuntimeException if initialization fails.*
+```java
+  HawcxInitializer initializer = HawcxInitializer.getInstance();
+  initializer.init(this, "YOUR_API_KEY");
+```
 
 - **`public SignIn getSignIn()`**  
   Returns an instance of the `SignIn` class.  
@@ -55,6 +58,88 @@ The `HawcxInitializer` class is a singleton responsible for initializing the SDK
 - **`private void checkInitialization()`**  
   Internal method that throws an exception if the SDK is not initialized.
 
+### Practical Example
+```java
+import android.app.Application;
+import android.content.Context;
+import com.hawcx.HawcxInitializer;
+import com.hawcx.auth.SignUp;
+import com.hawcx.auth.SignIn;
+import com.hawcx.auth.Restore;
+
+public class MyApplication extends Application {
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        
+        // Initialize the SDK with the application context and API key
+        HawcxInitializer initializer = HawcxInitializer.getInstance();
+        initializer.init(this, "YOUR_API_KEY");
+
+        // Obtain instances of the authentication components
+        SignUp signUp = initializer.getSignUp();
+        SignIn signIn = initializer.getSignIn();
+        Restore restore = initializer.getRestore();
+
+        // Use the SignUp component to register a new user
+        signUp.signUp("user@example.com", new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("Sign up successful! Proceed to verification.");
+            }
+        }, new SignUp.OnErrorListener() {
+            @Override
+            public void onError(String errorMessage) {
+                System.err.println("Sign up error: " + errorMessage);
+            }
+        });
+
+        // Use the SignIn component to sign in a user
+        signIn.signIn("user@example.com", new SignIn.SignInCallback() {
+            @Override
+            public void showEmailSignInScreen() {
+                System.out.println("Please use email sign-in.");
+            }
+
+            @Override
+            public void onSuccessfulLogin(String loggedInEmail) {
+                System.out.println("Login successful for: " + loggedInEmail);
+            }
+
+            @Override
+            public void showError(String errorMessage) {
+                System.err.println("Sign in error: " + errorMessage);
+            }
+
+            @Override
+            public void showError(SignIn.SignInErrorCode signInErrorCode, String errorMessage) {
+                System.err.println("Sign in error (" + signInErrorCode + "): " + errorMessage);
+            }
+
+            @Override
+            public void initiateBiometricLogin(Runnable onSuccess) {
+                // If biometric authentication is required, execute the provided success callback.
+                onSuccess.run();
+            }
+        });
+
+        // Step 5: Use the Restore component to generate an OTP for account restoration
+        restore.generateOtp("user@example.com", new Restore.OnSuccessListener() {
+            @Override
+            public void onSuccess(String message) {
+                System.out.println("OTP generated: " + message);
+            }
+        }, new Restore.OnErrorListener() {
+            @Override
+            public void onError(String message) {
+                System.err.println("OTP generation error: " + message);
+            }
+        });
+    }
+}
+
+```
 ---
 
 ## HawcxApi

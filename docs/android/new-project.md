@@ -20,20 +20,20 @@ This guide will walk you through the process of creating a new Android project w
 
 ## Steps
 
-1. **Create a New Android Project**
+- **Create a New Android Project**
    - Open Android Studio
    - Click on "File" > "New" > "New Project"
    - Choose "Empty Activity" and click "Next"
    - Set your application name, package name, and minimum SDK (26 or higher)
    - Click "Finish" to create the project
 
-2. **Add Hawcx AAR**
+- **Add Hawcx AAR**
    - [Download](https://github.com/hawcx/authenticator/releases/latest/download/hawcx.aar) the Hawcx AAR file.
    - Create a new folder named `libs` in your project's `app` directory
    - Copy the downloaded AAR file into the `libs` folder
    - Please make sure that names match with the names provided in the document.
 
-3. **Update Gradle Configuration**
+- **Update Gradle Configuration**
    - Open your app-level `build.gradle` file
    - Add the following to the `dependencies` section:
 
@@ -45,7 +45,7 @@ This guide will walk you through the process of creating a new Android project w
      ```
    - Sync your project with Gradle files
 
-4. **Initialize Hawcx Authentication**
+- **Initialize Hawcx Authentication**
    - Create a new Application class:
 
      ```java
@@ -70,7 +70,7 @@ This guide will walk you through the process of creating a new Android project w
      </application>
      ```
 
-5. **Implement Hawcx Features**
+- **Implement Hawcx Features**
    - Now you can start using Hawcx features in your activities and fragments. 
 
   ```java
@@ -78,44 +78,44 @@ This guide will walk you through the process of creating a new Android project w
     import com.hawcx.HawcxInitializer;
 
     public class MainActivity extends AppCompatActivity implements SignIn.SignInCallback {
-        @Override
-        protected void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_main);
+      @Override
+      protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
 
-            // Example: Implement secure login
-            // User Login
-            SignIn loginAct = HawcxInitializer.getInstance().getSignIn();
+        // Example: Implement secure login
+        // User Login
+        SignIn loginAct = HawcxInitializer.getInstance().getSignIn();
 
-            // Check last logged in user and signal biometric auth if applicable
-            loginAct.checkLastUser(this);
+        // Check last logged in user and signal biometric auth if applicable
+        loginAct.checkLastUser(this);
 
-            loginAct.signIn(email, this);
+        loginAct.signIn(email, this);
 
-            }
-            @Override
-            public void onSuccessfulLogin(String loggedInEmail) {
-                // Handle successful login
-            }
+      }
+      @Override
+      public void onSuccessfulLogin(String loggedInEmail) {
+        // Handle successful login
+      }
 
-            @Override
-            public void showError(String errorMessage) {
-                // Handle login failure
-            }
+      @Override
+      public void showError(String errorMessage) {
+        // Handle login failure
+      }
 
-            // If lastuser found
-            @Override
-            public void initiateBiometricLogin(Runnable onSuccess) {
-                // Handle Biometric Auth 
-            }
+      // If lastuser found
+      @Override
+      public void initiateBiometricLogin(Runnable onSuccess) {
+        // Handle Biometric Auth 
+      }
 
-            // If no last user is found 
-            @Override
-                public void showEmailSignInScreen() {
-                    // Handle the Email screen
-                }
-        }
+      // If no last user is found 
+      @Override
+      public void showEmailSignInScreen() {
+        // Handle the Email screen
+      }
     }
+
   ```
 
 <!-- 
